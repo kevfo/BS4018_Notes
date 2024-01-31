@@ -1,0 +1,40 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "BS4018: Biology of Aging and Neurodegeneration"
+  author: "Kevin Fo"
+  date: "31/01/2024"
+  chapters:
+    - index.qmd
+    - part: "**PART I: LECTURE NOTES**"
+      chapters:
+        - chapters/week1.qmd
+        - chapters/week2.qmd
+        - chapters/week3.qmd
+        - chapters/week4.qmd
+        - chapters/week5.qmd
+        - chapters/week6.qmd
+        - chapters/week7.qmd
+        - chapters/week8.qmd
+        - chapters/week9.qmd
+        - chapters/week10.qmd
+        - chapters/week11.qmd
+        - chapters/week12.qmd
+  sharing: [twitter, facebook]
+  page-navigation: true
+  repo-url: https://github.com/kevfo/BS4018_Notes/
+  repo-actions: [edit, issue]
+  reader-mode: true
+  comments: 
+    hypothesis: true
+format:
+  html:
+    toc: true 
+    theme:
+      light: cosmo
+      dark: darkly
+      
+editor: visual
+
