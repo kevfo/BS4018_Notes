@@ -1,231 +1,481 @@
-# Carbon Assimilation Reactions of Photosynthesis
+# Mitochondria in Aging and Neurodegeneration
 
-```{r echo = F, fig.cap = 'Energy Yield from Photosynthesis', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/inefficient.png')
+## Mitochondria Structure and Function
+
+```{r echo = F, fig.cap = 'Photo of a Mitochondrion', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/mitochondria.png')
 ```
 
-The thing about photosynthesis is that the process doesn't yield much energy.  As we can see from the above diagram, only a little bit of energy is actually absorbed from the sun - everything else is lost in the form of heat.
+The **mitochondrion**, often referred to as the "powerhouse of the cell," is a complex organelle with a distinct structure that allows it to carry out essential cellular functions, particularly energy production through oxidative phosphorylation. Here's an overview of its structure:
 
-Because of this, it's important that we find ways to improve this energy absorbed from the sun (i.e., efficiency)
-
-## Calvin Cycle
-
-```{r echo = F, fig.cap = 'Illustration of the Calvin Cycle', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/calvin.png')
-```
-
-The **Calvin cycle** is the light-independent reaction of photosynthesis and happens in the stroma (i.e., the space within the chloroplast).  The cycle does three things:
-
-1.  Combine carbon dioxide (i.e., CO~2~) with a sugar called **ribulose-1,5-biphosphate** (i.e., **RuBP**) to form two three-carbon intermediary products: **3-phosphoglycerate** (i.e., **3PGA**).
-1.  Reduce 3PGA to form something called **glyceraldehyde-3-phosphate** (i.e., **G3P**).
-1.  Remake RuBP.
-
-In short, we can summarize the Calvin cycle using this chemical equation:
-
-\begin{align}
-  &3CO_2 + 5H_2O + 6 NADPH + 9 ATP \stackrel{\text{Rubisco and other enzymes}}{\longrightarrow} \\ 
-  &G3P + 3H^+ + 6NADP^+ + 9 ADP + 8P_i
-\end{align}
-
-### What is Rubisco?
-
-This is an enzyme that many scientists want to know more about.
-
-```{r echo = F, fig.cap = 'Rubisco\'s Action', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/rubisco.png')
-```
-
-The enzyme **rubisco** - short for "Ribulose-1,5-biphosphate carboxylase / oxygenase" - is responsible for turning one molecule of RuBP into two molecules of 3PGA.
-
-What's interesting is that rubisco is the most common protein on Earth, but this enzyme often takes the most time to do its job in the dark portion of photosynthesis.  Though, what's also interesting is that there are more efficient enzymes than the Rubisco that crops have.
-
-### Stages of Calvin Cycle
-
-This cycle has three main stages:
-
-1.  **Reduction**
-
-    ```{r echo = F, fig.cap = 'Reduction Portion of Calvin Cycle', fig.align = 'center'}
-    knitr::include_graphics('../imgs/week5/reduction.png')
-    ```
+1.  **Matrix:**
     
-    In this portino of the cycle, there's an enzyme called **3PGA Kinase**.  It basically phosphorylates (i.e., adds a phosphate group) 3PGA to turn it into **1,3-PG**.
+    The matrix is the innermost compartment of the mitochondrion and contains a gel-like substance rich in enzymes, including those involved in the oxidation of pyruvate and fatty acids, as well as enzymes of the Krebs cycle (also known as the citric acid cycle or tricarboxylic acid cycle). Additionally, the matrix houses the mitochondrial DNA (mtDNA) and the machinery for gene expression, including RNA polymerase and ribosomes.
+
+1.  **Inner Membrane:**
+
+    The inner membrane surrounds the matrix and is highly folded into structures called cristae, which increase the surface area available for biochemical reactions. The inner membrane contains the electron transport chain (ETC), a series of protein complexes that transfer electrons derived from nutrients to generate ATP through oxidative phosphorylation. It also houses ATP synthase, an enzyme complex responsible for ATP production, as well as various transporters that regulate the passage of ions and metabolites across the membrane.
+
+1.  **Outer Membrane:**
+
+    The outer membrane surrounds the inner membrane and separates the mitochondrial interior from the cytoplasm. It is relatively permeable to small molecules with a molecular weight of less than 5 kilodaltons (kDa), allowing for the passage of ions, metabolites, and other small molecules.
+
+1.  **Intermembrane Space:**
+
+    The intermembrane space is the region between the inner and outer mitochondrial membranes. It contains a lower concentration of proteins compared to the matrix but may contain proteins involved in processes such as apoptosis regulation.
     
-    Then, another enzyme called **NADP-G3P dehydrogenase** reduces that 1,3-GP into the G3P that was mentioned earlier.
+### Energy-Converting Metabolism in Mitochondria
 
-1.  **Carboxylation and Reduction**
+```{r echo = F, fig.cap = 'Energy Converting Metabolism Diagram', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/energy_converting.png')
+```
 
-    ```{r echo = F, fig.cap = 'Carboxylation and Reduction Portion of the Calvin Cycle', fig.align = 'center'}
-    knitr::include_graphics('../imgs/week5/carboxylation.png')
-    ```
+Energy-converting metabolism in mitochondria is a complex process that involves several interconnected pathways aimed at generating adenosine triphosphate (ATP), the cell's primary energy currency. Mitochondria play a central role in cellular respiration, a process that involves the oxidation of nutrients to produce ATP through oxidative phosphorylation. Here's an overview of the key metabolic pathways involved:
+
+1. **Glycolysis:**
+   Glycolysis is the initial stage of glucose metabolism that occurs in the cytoplasm. Glucose is broken down into pyruvate, producing a small amount of ATP and reducing equivalents in the form of NADH. Pyruvate is then transported into the mitochondria for further metabolism.
+
+2. **Pyruvate Oxidation:**
+   Pyruvate produced from glycolysis enters the mitochondria, where it undergoes oxidation to produce acetyl-CoA. This process generates reducing equivalents in the form of NADH and releases carbon dioxide. Acetyl-CoA then enters the citric acid cycle (also known as the Krebs cycle) for further metabolism.
+
+3. **Citric Acid Cycle (Krebs Cycle):**
+   The citric acid cycle takes place in the mitochondrial matrix. Acetyl-CoA combines with oxaloacetate to form citrate, which undergoes a series of enzymatic reactions, ultimately regenerating oxaloacetate and producing reducing equivalents (NADH and FADH2) and ATP precursors (GTP). The cycle generates NADH and FADH2, which donate electrons to the electron transport chain (ETC).
+
+4. **Electron Transport Chain (ETC):**
+   The electron transport chain is located in the inner mitochondrial membrane. It consists of a series of protein complexes (I-IV) and coenzyme Q and cytochrome c as electron carriers. As electrons move through the ETC, they release energy, which is used to pump protons (H+) across the inner mitochondrial membrane, establishing an electrochemical gradient.
+
+5. **ATP Synthesis:**
+   The proton gradient generated by the ETC drives ATP synthesis through ATP synthase, an enzyme complex located in the inner mitochondrial membrane. Protons flow back into the mitochondrial matrix through ATP synthase, driving the synthesis of ATP from adenosine diphosphate (ADP) and inorganic phosphate (Pi). This process is known as oxidative phosphorylation.
+   
+### Glucose to NADH
+
+```{r echo = F, fig.cap = 'NADH Generation', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/nadh_generation.png')
+```
+
+Glucose undergoes several metabolic reactions to produce NADH during cellular respiration. The process begins with glycolysis, where glucose is converted into pyruvate. Here's a simplified breakdown of the steps involved:
+
+1. **Glycolysis:**
+   Glucose (a 6-carbon molecule) is phosphorylated and split into two molecules of glyceraldehyde-3-phosphate (G3P), each containing three carbons. These G3P molecules are further oxidized and phosphorylated, ultimately yielding two molecules of pyruvate (a 3-carbon molecule). Along the way, glycolysis produces a net gain of 2 ATP molecules and 2 NADH molecules per glucose molecule.
+
+2. **Pyruvate Oxidation:**
+   Each pyruvate molecule produced during glycolysis enters the mitochondria, where it undergoes oxidation to produce acetyl-CoA. This process generates reducing equivalents in the form of NADH. While pyruvate oxidation does not directly produce NADH molecules, it generates NADH during subsequent steps of the citric acid cycle (Krebs cycle).
+
+3. **Krebs Cycle (Citric Acid Cycle):**
+   Acetyl-CoA combines with oxaloacetate to form citrate, initiating the citric acid cycle. Through a series of enzymatic reactions, citrate is metabolized, ultimately regenerating oxaloacetate and producing reducing equivalents (NADH and FADH2). While the precise contribution of each pyruvate to NADH production in the Krebs cycle varies, each glucose molecule ultimately yields multiple NADH molecules through this pathway.
+
+#### NADH Usage
+
+```{r echo = F, fig.cap = 'NADH Usage', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/nadh_usage.png')
+```
+
+**NADH (nicotinamide adenine dinucleotide, reduced form)** is a critical molecule in cellular metabolism, serving as a carrier of electrons during various biochemical reactions. Its primary role is to transfer high-energy electrons to the electron transport chain (ETC) in the mitochondria, where they are ultimately used to generate ATP through oxidative phosphorylation.
+
+Here's how NADH is used in cellular metabolism:
+
+1. **Electron Transport Chain (ETC):**
+   NADH donates its electrons to complex I (NADH dehydrogenase) of the electron transport chain in the inner mitochondrial membrane. These electrons then pass through a series of protein complexes (I-IV), including flavin mononucleotide (FMN), iron-sulfur clusters, and cytochromes, leading to the pumping of protons (H+) from the mitochondrial matrix to the intermembrane space. This creates an electrochemical gradient across the inner mitochondrial membrane.
+
+2. **ATP Synthesis:**
+   The flow of protons back into the mitochondrial matrix through complex V (ATP synthase) harnesses the energy released to drive the synthesis of ATP from adenosine diphosphate (ADP) and inorganic phosphate (Pi). This process, known as oxidative phosphorylation, is responsible for the majority of ATP production in aerobic cells.
+
+3. **Regeneration of NAD+:**
+   After donating its electrons to the ETC, NADH is oxidized back to its original form, NAD+, allowing it to participate in subsequent rounds of metabolism. This regeneration of NAD+ is crucial for sustaining glycolysis, the citric acid cycle, and other metabolic pathways that rely on NAD+ as a cofactor.
+   
+### Electron Transport Chain
+
+```{r echo = F, fig.cap = 'Illustration of the Electron Transport Chain', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/electron_transport_chian.png')
+```
+
+The **Electron Transport Chain (ETC)** is a critical component of cellular respiration, occurring in the inner mitochondrial membrane of eukaryotic cells and the plasma membrane of prokaryotic cells. It is responsible for the final stage of oxidative phosphorylation, the process by which cells generate adenosine triphosphate (ATP), the primary energy currency.
+
+Here's how the Electron Transport Chain works:
+
+1. **Electron Carriers:**
+   The ETC consists of a series of protein complexes and small molecules that serve as electron carriers. These include flavoproteins, iron-sulfur proteins, cytochromes, and coenzyme Q (ubiquinone).
+
+2. **Electron Flow:**
+   Electrons donated by NADH and FADH2 (produced during glycolysis, pyruvate oxidation, and the citric acid cycle) enter the ETC at complex I (NADH dehydrogenase) and complex II (succinate dehydrogenase), respectively. These electrons are transferred sequentially from one carrier to another along the ETC, losing energy with each transfer.
+
+3. **Proton Pumping:**
+   As electrons flow through the ETC, energy released from their transfer is used to pump protons (H+) from the mitochondrial matrix to the intermembrane space, creating an electrochemical gradient across the inner mitochondrial membrane. Complexes I, III, and IV are involved in this process.
+
+4. **Chemiosmosis:**
+   The electrochemical gradient generated by proton pumping creates a proton motive force (PMF), which drives protons back into the mitochondrial matrix through complex V, also known as ATP synthase. As protons flow through ATP synthase, the energy released is used to convert adenosine diphosphate (ADP) and inorganic phosphate (Pi) into ATP, a process known as oxidative phosphorylation.
+
+5. **Oxygen as the Final Electron Acceptor:**
+   At the end of the ETC, electrons are transferred to molecular oxygen (O2), the final electron acceptor. Oxygen combines with protons to form water (H2O), completing the electron transport chain.
+
+#### Alternative Pathways
+
+```{r echo = F, fig.cap = 'Different Paths in the Electron Transport Chain', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/chain.png')
+```
+
+In the Electron Transport Chain (ETC), there are two main pathways for the flow of electrons:
+
+1. **Complex I → Complex III → Complex IV:**
+   This pathway begins with complex I (NADH dehydrogenase) receiving electrons from NADH. Complex I transfers these electrons to coenzyme Q (ubiquinone), which then delivers them to complex III (cytochrome bc1 complex). Complex III passes the electrons to cytochrome c, and finally, they are transferred to complex IV (cytochrome c oxidase). Complex IV uses these electrons to reduce molecular oxygen (O2) to water (H2O).
+
+2. **Complex II → Complex III → Complex IV:**
+   This pathway involves complex II (succinate dehydrogenase) receiving electrons directly from succinate in the citric acid cycle. Complex II transfers these electrons to coenzyme Q, which then follows the same path as in the previous pathway, delivering the electrons to complex III and then complex IV for the reduction of oxygen to water.
+   
+### Baffle versus Crista Junction Model
+
+```{r echo = F, fig.cap = 'Different Models of the ER', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/models.png')
+```
+
+The Baffle Model and the Crista Junction Model are two proposed mechanisms that describe the organization of cristae, the internal membrane structures within mitochondria, and their role in mitochondrial function. Let's delve into each model:
+
+1. **Baffle Model:**
+
+    The Baffle Model suggests that cristae are formed by invaginations of the inner mitochondrial membrane (IMM) that protrude into the mitochondrial matrix. These invaginations create a labyrinth-like structure, increasing the surface area of the inner membrane and providing more space for oxidative phosphorylation (ATP production). The term "baffles" refers to the folds or ridges formed by these invaginations.
     
-    When we add carbons to three RuBP molecules, this gives us six G3P molecules.  One of thes G3P molecules are used in carbon metabolism and the other five are used to re-make RuBP.
+    In this model, the cristae junctions, which are the points where the inner membrane folds connect to the outer membrane, are considered to be relatively sparse and randomly distributed. The spaces between cristae (intercristae spaces) are thought to allow for efficient diffusion of metabolites and ions, facilitating metabolic processes within the mitochondria.
 
-1.  **Regeneration**
+2. **Crista Junction Model:**
 
-    ```{r echo = F, fig.cap = 'Regeneration Portion of the Calvin Cycle', fig.align = 'center'}
-    knitr::include_graphics('../imgs/week5/regeneration.png')
-    ```
+    The Crista Junction Model proposes a different organization of cristae within mitochondria. According to this model, cristae are interconnected by narrow tubular structures known as cristae junctions. These junctions serve as gateways that regulate the exchange of molecules between the intermembrane space and the mitochondrial matrix.
+
+    In the Crista Junction Model, the cristae are believed to be more tightly packed and organized compared to the Baffle Model. The presence of cristae junctions allows for compartmentalization of the inner mitochondrial membrane, segregating different metabolic processes and creating microenvironments within the mitochondria.
     
-    In this part of the Calvin cycle, the RuBP molecules are regenerated usign the RuBP molecules.
+### Electron Transport in the Cristae
 
-## Rubisco
-
-```{r echo = F, fig.cap = 'Structure of Rubisco', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/rubisco_structure.png')
+```{r echo = F, fig.cap = 'Electron Transport in the Cristae', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/electron_transport_cristae.png')
 ```
 
-Rubisco is like a big protein (i.e., around 550 kDa) with eight large parts (i.e., **LSU**) and eight small parts (i.e., **SSU**), making a total of 16 parts. These LSU parts form pairs called **dimers**, and each dimer has two special spots for chemical reactions (i.e., the stars). These spots are made up of different parts of the LSU. All Rubiscos have these same spots.
+The electron transport chain (ETC) in mitochondria is a crucial process in cellular respiration, where electrons derived from the oxidation of nutrients are passed along a series of protein complexes embedded in the inner mitochondrial membrane (IMM). This process generates a proton gradient across the membrane, which is used to produce adenosine triphosphate (ATP) through oxidative phosphorylation. Cristae, the inward-folded structures of the IMM, play a critical role in facilitating the ETC and ATP synthesis. Here's how the ETC functions within the cristae:
 
-These dimers group together to form an eight-part core (i.e., **L8**). Around this core, there are eight small subunits (SSUs), split into two groups – one at the top and one at the bottom of the core. The core's full activity depends on these SSU parts.
+1. **Organization within Cristae:**
+   Cristae provide an extensive surface area for the assembly and functioning of the ETC complexes. The proteins comprising the ETC, including complex I (NADH dehydrogenase), complex II (succinate dehydrogenase), complex III (cytochrome bc1 complex), complex IV (cytochrome c oxidase), and ATP synthase (complex V), are embedded within the cristae membranes.
 
-```{r echo = F, fig.cap = 'Rubisco as a Bifunctional Enzyme', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/bifunctional.png')
+2. **Electron Transfer:**
+   The ETC begins with the transfer of electrons from NADH or FADH2 to complex I or complex II, respectively. These electrons are then passed sequentially through the ETC complexes, with each complex accepting and donating electrons to the next in the chain. As electrons move along the chain, they release energy that is used to pump protons (H+) across the cristae membrane from the mitochondrial matrix to the intermembrane space.
+
+3. **Proton Gradient Formation:**
+   The pumping of protons from the mitochondrial matrix into the intermembrane space creates a proton gradient across the cristae membrane. This gradient represents stored energy that can be harnessed to drive ATP synthesis.
+
+4. **ATP Synthesis:**
+   The proton gradient established by the ETC drives the rotation of the rotor subunit within ATP synthase (complex V). This rotational motion catalyzes the synthesis of ATP from adenosine diphosphate (ADP) and inorganic phosphate (Pi) in a process known as chemiosmosis. ATP synthase is located within the cristae membrane and utilizes the energy from proton movement to generate ATP.
+
+### Origins of the Mitochondria
+
+```{r echo = F, fig.cap = 'Origins of the Mitochondria', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/origins.png')
 ```
 
-Apart from its main job of adding CO~2~ to RuBP, Rubisco can also do something else. It can work with O~2~ and attach it to RuBP. However, this oxygen part is like a competitor to the carbon dioxide. They look alike and behave in a similar way, so sometimes oxygen gets in the way of CO~2~ doing its job.
+Around 1.5 billion years ago, a remarkable event occurred in the history of life on Earth: the engulfment of a free-living bacterium by a primitive eukaryotic cell. This bacterium was likely an alpha-proteobacterium, a group of bacteria closely related to modern-day mitochondria. Instead of being digested by the host cell, this bacterium formed a symbiotic relationship with it, possibly providing additional energy in the form of ATP through aerobic respiration.
 
-### Activation with CO~2~ and Mg^2+^
+Over time, this symbiotic relationship evolved, with the engulfed bacterium becoming increasingly integrated into the host cell. This integration involved a gradual transfer of genetic material from the bacterium to the host cell nucleus, resulting in the loss of many bacterial genes and the retention of only a small genome within the mitochondria. This genome is now known as mitochondrial DNA (mtDNA).
 
-```{r echo = F, fig.cap = 'Activating Rubisco', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/activation.png')
+As this symbiosis continued, the host cell and the engulfed bacterium became interdependent, with the bacterium specializing in energy production through oxidative phosphorylation (aerobic respiration) while the host cell provided protection and resources. This symbiotic relationship proved to be highly advantageous, allowing eukaryotic cells to generate more energy and thus thrive in diverse environments.
+
+Through natural selection and genetic drift, the symbiotic bacterium gradually evolved into the mitochondria we see in modern eukaryotic cells. Mitochondria retained their own distinct characteristics, such as a double membrane structure and their own genome (mtDNA), while also becoming integrated into the cellular machinery of the host cell.
+
+### Biogenesis of Respiratory Chain Proteins
+
+```{r echo = F, fig.cap = 'Biogenesis of Respiratory Chain Proteins', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/resp_chain_proteins.png')
 ```
 
-There's a special spot in all Rubisco large subunits called Lys 201, which plays a crucial role. It helps CO2 slowly stick to it, forming something called a carbamate (EC). This CO2 that sticks here is like an "activator" and is different from the CO2 used for the main job of fixing carbon with RuBP.
+The biogenesis of respiratory chain proteins, which are essential components of the electron transport chain (ETC) in mitochondria, involves a complex process of synthesis, assembly, and insertion into the inner mitochondrial membrane (IMM). Here's an overview of the steps involved:
 
-To make sure this carbamate is stable, it needs the help of magnesium ions (Mg2+). When these ions quickly attach to the active site, it makes the spot ready for the actual chemical reactions to happen.
+1. **Synthesis of Mitochondrial Proteins:**
+   The majority of mitochondrial proteins, including those involved in the respiratory chain, are encoded by nuclear genes and synthesized in the cytoplasm as precursor proteins. These precursor proteins typically contain N-terminal targeting sequences, called mitochondrial targeting sequences (MTS) or presequences, that direct them to the mitochondria.
 
-### Photorespiration
+2. **Import into Mitochondria:**
+   Upon synthesis in the cytoplasm, mitochondrial precursor proteins are recognized by cytoplasmic chaperones and escorted to the translocase of the outer membrane (TOM) complex, which is responsible for the initial recognition and translocation of precursor proteins across the outer mitochondrial membrane (OMM). The MTS directs the precursor protein through the TOM complex into the intermembrane space (IMS).
 
-```{r echo = F, fig.cap = 'Photorespiration by Rubisco', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/photorespiration.png')
+3. **Sorting and Processing:**
+   Once in the IMS, the MTS is cleaved by the mitochondrial processing peptidase (MPP), resulting in the removal of the targeting sequence and yielding the mature protein. Some proteins require further processing by additional proteases within the IMS.
+
+4. **Assembly of Respiratory Complexes:**
+   Mature proteins synthesized in the cytoplasm or imported into the mitochondria are assembled into multi-subunit complexes that constitute the respiratory chain. These complexes include complex I (NADH dehydrogenase), complex II (succinate dehydrogenase), complex III (cytochrome bc1 complex), complex IV (cytochrome c oxidase), and ATP synthase (complex V).
+
+5. **Insertion into the Inner Mitochondrial Membrane (IMM):**
+   The assembled respiratory chain complexes are inserted into the IMM with the assistance of various assembly factors and chaperones. The precise mechanisms of insertion and assembly vary for each complex but often involve interactions with specific lipid components of the IMM and assembly factors that facilitate proper folding and integration into the membrane.
+
+6. **Formation of Supramolecular Structures:**
+   Once inserted into the IMM, individual respiratory chain complexes can interact with each other to form supramolecular structures known as supercomplexes or respirasomes. These structures optimize electron transfer efficiency and minimize reactive oxygen species (ROS) production by facilitating the rapid and efficient transfer of electrons through the ETC.
+
+#### Mitochondrial Targeting Sequence
+
+```{r echo = F, fig.cap = 'Targeting Sequences', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/targets.png')
 ```
 
-When Rubisco uses oxygen instead of carbon dioxide to work with RuBP, it's not very efficient. This is considered wasteful because it requires a lot of energy and resources to fix the mistakes that happen during this process. It takes up energy (ATP) and some other important stuff, and it even loses some of the carbon dioxide that was supposed to be captured. 
+The **mitochondrial targeting sequence (MTS)**, also known as a mitochondrial transit peptide or presequence, is a short, hydrophobic peptide sequence found at the N-terminus of proteins destined for import into mitochondria. The MTS serves as a molecular tag that directs precursor proteins from the cytoplasm to the mitochondria, where they undergo further processing and are ultimately integrated into the mitochondrial compartments.
 
-This problem with Rubisco's preference for oxygen over carbon dioxide (called **CO~2~ / O~2~ specificity**) affects how efficiently plants can use carbon dioxide in photosynthesis. It determines whether carbon gets used for making sugars in the Calvin cycle (good) or gets lost in a less useful process called photorespiration (not so good).
+Here's how the mitochondrial targeting sequence works:
 
-### Catalysis 
+1. **Recognition in the Cytoplasm:**
+   Newly synthesized precursor proteins containing an MTS are recognized by cytoplasmic chaperones and targeting factors. These factors prevent the premature folding of the precursor protein and help maintain its unfolded state, facilitating its recognition by the mitochondrial import machinery.
 
-Rubisco manages five different steps during catalysis, and each of these steps is complex enough that it would typically need its own enzyme to get the job done.
+2. **Translocation across the Outer Membrane:**
+   The precursor protein, bound to cytoplasmic chaperones, is guided to the translocase of the outer membrane (TOM) complex, which is located in the outer mitochondrial membrane (OMM). The TOM complex recognizes the MTS and facilitates the translocation of the precursor protein across the OMM into the intermembrane space (IMS) of the mitochondria.
 
-```{r echo = F, fig.cap = 'Catalysis by Rubisco', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/catalysis.png')
+3. **Processing and Sorting:**
+   Once in the IMS, the MTS is cleaved by the mitochondrial processing peptidase (MPP), resulting in the removal of the targeting sequence. This cleavage event releases the mature protein, which may then be further sorted and directed to its specific destination within the mitochondria, such as the matrix, inner mitochondrial membrane (IMM), or intermembrane space.
+
+4. **Integration into Mitochondrial Compartments:**
+   The mature protein is then integrated into the appropriate mitochondrial compartment, where it performs its specific function. This integration process may involve additional folding, assembly into multi-subunit complexes, or insertion into the IMM, depending on the protein's destination and function within the mitochondria.
+
+#### Mitochondrial Protein Import
+
+```{r echo = F, fig.cap = 'Importing Proteins into the Mitochondria', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/protein_import.png')
 ```
 
-However, alongside its main job, Rubisco sometimes gets sidetracked into unproductive side reactions, shown in blue. These side reactions aren't helpful; they can either create compounds that inhibit Rubisco's own function (like XuBP) or decrease the amount of a useful product called 3-PGA that should be produced. These side distractions reduce the overall efficiency of Rubisco's work.
+Mitochondrial protein import is a fundamental process by which proteins synthesized in the cytoplasm are transported into mitochondria, where they perform essential functions in various mitochondrial compartments. This import process is highly regulated and involves several steps, ensuring that proteins are correctly targeted to their specific destinations within mitochondria. Here's an overview of mitochondrial protein import:
 
-### Rubisco is Inefficient
+1. **Recognition of Mitochondrial Targeting Sequence (MTS):**
+   Proteins destined for import into mitochondria typically contain an N-terminal mitochondrial targeting sequence (MTS), also known as a mitochondrial transit peptide or presequence. The MTS is recognized by cytoplasmic chaperones and targeting factors, which prevent premature folding of the precursor protein and facilitate its recognition by the mitochondrial import machinery.
 
-Rubisco isn't good at capturing carbon dioxide. There are a few reasons for this:
+2. **Translocation Across the Outer Membrane:**
+   The precursor protein, bound to cytoplasmic chaperones, is directed to the translocase of the outer membrane (TOM) complex, located in the outer mitochondrial membrane (OMM). The TOM complex recognizes the MTS and facilitates the translocation of the precursor protein across the OMM into the intermembrane space (IMS) of the mitochondria.
 
-1.  **Abortive Side Reactions** 
+3. **Sorting and Processing in the Intermembrane Space (IMS):**
+   Once in the IMS, the MTS is cleaved by the mitochondrial processing peptidase (MPP), resulting in the removal of the targeting sequence. This cleavage event releases the mature protein, which may then be further sorted and directed to its specific destination within the mitochondria, such as the matrix, inner mitochondrial membrane (IMM), or intermembrane space.
 
-    Rubisco sometimes gets distracted by unproductive side reactions.
+4. **Translocation Across the Inner Membrane:**
+   Proteins targeted to the mitochondrial matrix or inner mitochondrial membrane (IMM) undergo additional translocation steps across the inner membrane. This process is facilitated by protein translocases, including the presequence translocase-associated motor (PAM) complex and the TIM22 and TIM23 complexes. These translocases recognize and transport proteins with specific targeting signals across the IMM into the matrix or inner membrane.
 
-2.  **Low Specificity for CO2**
+5. **Integration into Mitochondrial Compartments:**
+   Once inside the mitochondrial matrix or IMM, proteins may undergo further folding, assembly into multi-subunit complexes, or insertion into the membrane, depending on their specific functions within mitochondria. Some proteins may also remain in the IMS, where they perform specialized roles in processes such as protein folding, oxidative protein folding, or apoptosis regulation.
 
-    It isn't very picky and often mistakes oxygen for carbon dioxide.
+#### Energy and Protein Import 
 
-3.  **Slow Working Speed**
-
-    Rubisco works quite slowly, with a turnover rate of about one to two reactions per second in real-life conditions.
-
-Because of these limitations, plants have to invest a lot of their resources into Rubisco to make sure they can capture enough carbon dioxide to grow effectively.
-
-#### Overcoming Rubisco's Inefficiency
-
-Rubisco plays a significant role in how much water a leaf needs to let evaporate to get carbon dioxide. This is called the transpiration ratio. In tobacco, for instance, this ratio is usually around 500 to 1000, but it can change depending on factors like light, temperature, and humidity.
-
-The efficiency of Rubisco directly affects this transpiration ratio, especially when there isn't much carbon dioxide around. If Rubisco works better (meaning it can work faster and is better at picking carbon dioxide over oxygen), it allows the leaf to do its job with less carbon dioxide. As a result, the leaf can close its stomatal pores a bit to reduce water loss while still getting enough carbon dioxide for photosynthesis.
-
-## Rubisco Activase
-
-```{r echo = F, fig.cap = 'Catalysis by Rubisco', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/activase.png')
+```{r echo = F, fig.cap = 'Energy Requirements During Import', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/energy_import.png')
 ```
 
-In higher plants, Rubisco has a helper called **Rubisco activase**. This protein's job is to clean up any mess left behind by inhibitory sugar-phosphate molecules. These inhibitory molecules can come from natural processes or the side reactions we talked about earlier.
+Energy plays a crucial role in mitochondrial protein import, facilitating the translocation of precursor proteins across the mitochondrial membranes and their subsequent sorting and processing within mitochondria. Here's how energy is involved in various stages of mitochondrial protein import:
 
-Rubisco activase works by interacting with Rubisco's big structures and using energy from ATP to get rid of these sugar-phosphate molecules that are stuck to Rubisco's active sites - E, EC, or ECM. This cleaning process allows Rubisco to get back to work, so it can do its job of capturing carbon dioxide and helping with photosynthesis.
+1. **Translocation Across the Outer Membrane:**
+   The translocation of precursor proteins across the outer mitochondrial membrane (OMM) is facilitated by the translocase of the outer membrane (TOM) complex. While some precursor proteins are passively translocated through the TOM complex, others require energy in the form of ATP to overcome the electrochemical gradient across the membrane and enter the intermembrane space (IMS) of the mitochondria. ATP hydrolysis provides the energy needed for the initial translocation step.
 
-### Structure of Rubisco Activase
+2. **Translocation Across the Inner Membrane:**
+   Precursor proteins targeted to the mitochondrial matrix or inner mitochondrial membrane (IMM) undergo additional translocation steps across the inner membrane. This process is facilitated by protein translocases, including the presequence translocase-associated motor (PAM) complex and the TIM22 and TIM23 complexes. ATP hydrolysis by the PAM complex provides the energy required for the translocation of proteins across the inner membrane into the matrix or inner membrane.
 
-Rubisco activase is a protein that's relatively small, measuring about 42 to 46 kDa. In some plants, there are two slightly different versions of this protein due to alternative splicing of the same genetic instructions. These variations mainly differ in the length of their tail-end.
+3. **Folding, Sorting, and Processing:**
+   Once inside the mitochondrial matrix or IMM, precursor proteins may undergo folding, assembly into multi-subunit complexes, or insertion into the membrane. These processes often require energy in the form of ATP to facilitate protein folding, conformational changes, and membrane insertion. ATP-dependent chaperones and protein folding enzymes within mitochondria utilize ATP hydrolysis to assist in protein folding and quality control.
 
-For Rubisco activase to do its job properly, six of these protein molecules need to come together and form a circular hexamer complex. This arrangement was only figured out in 2011, after 20 years of research.
+4. **Maintenance of Membrane Potential:**
+   The maintenance of an electrochemical gradient across the mitochondrial membranes, driven by proton pumping by the electron transport chain (ETC), is essential for mitochondrial protein import. This proton gradient provides the driving force for the import of precursor proteins into mitochondria and the translocation of proteins across the inner membrane. ATP hydrolysis by the ATP synthase complex, located in the inner membrane, contributes to the maintenance of the proton gradient by consuming ATP to drive proton pumping.
 
-Interestingly, the 46 kDa version of Rubisco activase has some cysteine residues in its tail-end. These cysteine parts are important because they allow its activity to be regulated by a system involving ferredoxin and thioredoxin.
+## Reactive Oxygen Species
 
-## Regulating the Calvin Cycle
-
-```{r echo = F, fig.cap = 'Calvin Cycle Regulation Mechanisms', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/regulation.png')
+```{r echo = F, fig.cap = 'Superoxide Generation from the Mitochondria', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/superoxide.png')
 ```
 
-The Calvin cycle involves several enzymes like FBPase, SBPase, PRK, 1,3-PG dehydrogenase, and sometimes Rubisco activase. These enzymes don't work at full speed all the time; their activity is actually controlled by light. 
+Superoxide generation by mitochondria is a natural byproduct of the electron transport chain (ETC) during oxidative phosphorylation, the process by which cells produce adenosine triphosphate (ATP). While mitochondria play a crucial role in cellular energy production, they can also generate reactive oxygen species (ROS), including superoxide radicals (O2•−), as a result of electron leakage from the ETC. Here's how superoxide is generated by mitochondria:
 
-This control happens through something called the **ferredoxin-thioredoxin system**. It's like a link that connects the light absorbed by the thylakoid membranes to the performance of these enzymes in the stroma, the fluid inside the chloroplasts. So, when there's light, these enzymes can work better, which is important for photosynthesis.
+1. **Electron Leakage:**
+   During oxidative phosphorylation, electrons are transferred along the ETC through a series of protein complexes embedded in the inner mitochondrial membrane (IMM). While the majority of electrons flow smoothly through the ETC, some leakage can occur at various points along the chain, particularly at complexes I and III. This electron leakage leads to the partial reduction of molecular oxygen (O2) to form superoxide radicals (O2•−).
 
-When light is present, what happens is that there's more magnesium and less H^+^ ions, and this helps activate FBPase, SBPase, PRK, and Rubisco.
+2. **Site of Generation:**
+   The primary sites of superoxide generation within mitochondria are believed to be complexes I and III of the ETC. Complex I (NADH dehydrogenase) and complex III (cytochrome bc1 complex) are known to produce superoxide radicals as a result of single-electron reduction of molecular oxygen by ubisemiquinone radicals (ubisemiquinone-O2 reaction) and cytochrome b, respectively.
 
-### Why Regulate the Calvin Cycle?
+3. **Regulation and Mitochondrial ROS Production:**
+   Mitochondrial superoxide generation is regulated by various factors, including the redox state of electron carriers within the ETC, the proton motive force across the inner mitochondrial membrane (IMM), and the availability of oxygen as a terminal electron acceptor. Changes in mitochondrial membrane potential, substrate availability, or ETC inhibitors can alter ROS production by mitochondria.
 
-Running the Calvin cycle just right is super important. It needs to go at a pace that matches the current conditions, like how much sunlight there is. Also, the amounts of different substances within the cycle need to stay balanced. If the cycle goes too fast or slow at different points, it can mess things up by storing too much of some substances and causing problems.
+4. **Physiological and Pathological Roles:**
+   While superoxide generation by mitochondria is a natural process essential for cellular signaling and redox homeostasis, excessive ROS production can have detrimental effects on cellular components, leading to oxidative damage, mitochondrial dysfunction, and cell death. Mitochondrial ROS have been implicated in various physiological processes, including cell signaling, apoptosis, and aging, as well as in the pathogenesis of numerous diseases, including neurodegenerative disorders, cardiovascular diseases, and cancer.
 
-Getting out of the cycle also has to be carefully managed. If not enough triose phosphates are taken out, it causes a buildup of certain sugars, and there won't be enough phosphate for making ATP. On the other hand, if too much is removed, we can't use the energy and reducing power produced during the light reactions effectively. So, it's crucial to strike the right balance.
+### Radical Theory
 
-## Overcoming Rubisco's Limitations with Other Plants
-
-### C~4~ Photosynthetic Cycle for Capturing CO~2~
-
-```{r echo = F, fig.cap = 'Carboxylation in C~4~ Plants', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/c4.png')
+```{r echo = F, fig.cap = 'Radical Theory of Aging', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/radical_theory.png')
 ```
 
-In C4 plants, the process of capturing carbon dioxide involves five stages:
+The **mitochondrial free radical theory of aging** proposes that aging and age-related diseases are, at least in part, driven by the cumulative damage caused by reactive oxygen species (ROS) generated by mitochondria during cellular respiration. Here's an overview of the theory:
 
-1.  **Carboxylation in Mesophyll Cells**
-    
-    It starts with a molecule called PEP being combined with HCO3- (not CO2) by an enzyme called PEP carboxylase in the mesophyll cells. This forms another 4-carbon acid, like malate or aspartate.
+1. **ROS Production by Mitochondria:**
+   Mitochondria are the primary producers of ROS within cells. During oxidative phosphorylation, electrons leaking from the electron transport chain (ETC) can react with molecular oxygen (O2), resulting in the formation of superoxide radicals (O2•−). Superoxide can then be converted into other ROS, including hydrogen peroxide (H2O2) and hydroxyl radicals (•OH), through various enzymatic and non-enzymatic reactions.
 
-2.  **Transport to Bundle Sheath Cells**
+2. **Damage to Cellular Components:**
+   ROS generated by mitochondria can react with and damage cellular components, including lipids, proteins, and DNA. This oxidative damage can lead to disruptions in cellular homeostasis, impaired cellular function, and ultimately contribute to the aging process. For example, ROS-induced lipid peroxidation can lead to membrane damage, protein oxidation can impair enzymatic function, and DNA damage can result in mutations and cellular dysfunction.
 
-    These 4-carbon acids are then moved to the bundle sheath cells.
+3. **Mitochondrial Dysfunction:**
+   Over time, the accumulation of oxidative damage to mitochondrial components can lead to mitochondrial dysfunction, including impaired ATP production, altered mitochondrial membrane potential, and increased production of ROS. This creates a vicious cycle whereby dysfunctional mitochondria produce even more ROS, exacerbating oxidative damage and further compromising cellular function.
 
-3.  **Decarboxylation**
+4. **Age-Related Diseases:**
+   Mitochondrial ROS and oxidative stress have been implicated in the pathogenesis of various age-related diseases, including neurodegenerative disorders (e.g., Alzheimer's disease, Parkinson's disease), cardiovascular diseases, metabolic disorders, and cancer. Oxidative damage to cellular components contributes to the development and progression of these diseases, highlighting the role of mitochondrial dysfunction in aging-related pathologies.
 
-    In the bundle sheath cells, these 4-carbon acids are transformed to release CO2 and a 3-carbon acid.
+5. **Antioxidant Defenses and Longevity:**
+   While ROS are inherently reactive and damaging, cells possess antioxidant defense mechanisms to neutralize and mitigate their effects. These include enzymatic antioxidants (e.g., superoxide dismutase, catalase, glutathione peroxidase) and non-enzymatic antioxidants (e.g., vitamin C, vitamin E, glutathione). Enhanced antioxidant defenses have been associated with increased longevity and reduced age-related pathologies in various model organisms.
+   
+### Superoxide Dismutase
 
-4.  **CO2 Fixation**
-
-    This released CO2 is captured by Rubisco in the bundle sheath cells through the Calvin cycle.
-
-5.  **Transport Back to Mesophyll Cells**
-
-    The 3-carbon acid product goes back to the mesophyll cells to make more PEP, and the cycle continues.
-
-### Favorable Characteristics in C~4~ Plants
-
-```{r echo = F, fig.cap = 'Rubisco Content in C~3~ and C~4~ Plants', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/rubisco_content.png')
+```{r echo = F, fig.cap = 'Illustration of Superoxide Dismutase\'s Function', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/dismutase.png')
 ```
 
-C~4~ plants have a clever way of concentrating carbon dioxide near Rubisco, the enzyme that helps with photosynthesis. This has some important benefits. It reduces the chance of Rubisco mistakenly using oxygen, which is a good thing because it lowers the rate of photorespiration.
+Superoxide dismutase (SOD) is an enzyme that catalyzes the conversion of superoxide radicals (O2•−) into hydrogen peroxide (H2O2) and molecular oxygen (O2). However, hydrogen peroxide itself is also a reactive oxygen species (ROS) that can cause cellular damage if not properly neutralized. To further detoxify hydrogen peroxide, cells utilize other enzymes such as catalase and glutathione peroxidase. Here's how the conversion of hydrogen peroxide to water (H2O) occurs:
 
-Additionally, these plants don't need as much Rubisco, which is a protein, because they have higher Vc~max~ rates. This makes them better at using nitrogen efficiently. Also, they use bicarbonate (HCO3^-^) as their main source of carbon, and this doesn't lead to oxygenation like CO~2~ can. Because of this, C~4~ plants can operate with lower levels of CO~2~ inside their cells. This means they can have smaller stomata openings, which helps them use water more efficiently compared to C~3~ plants.
+1. **Catalase:**
+   Catalase is an enzyme found in peroxisomes and certain other cellular compartments. It catalyzes the decomposition of hydrogen peroxide into water and molecular oxygen, as follows:
+   
+   $2H_2O_2 \rightarrow 2H_2O + O_2$
 
-### CAM Photosynthesis
+   Catalase rapidly converts hydrogen peroxide into water and oxygen, thereby neutralizing its harmful effects on cells.
 
-```{r echo = F, fig.cap = 'CAM Photosynthesis Overview', fig.align = 'center'}
-knitr::include_graphics('../imgs/week5/cam.png')
+2. **Glutathione Peroxidase:**
+   Glutathione peroxidase is another enzyme involved in the detoxification of hydrogen peroxide. It utilizes reduced glutathione (GSH) as a cofactor to reduce hydrogen peroxide to water while oxidizing glutathione to its disulfide form. The reaction is as follows:
+
+   $2GSH + H_2O_2 \rightarrow GSSG + 2H_2O$
+
+   In this reaction, glutathione peroxidase reduces two molecules of hydrogen peroxide to two molecules of water while simultaneously oxidizing two molecules of glutathione.
+
+## Mitochondria and Apoptosis
+
+```{r echo = F, fig.cap = 'Differences Between Apoptosis and Necrosis', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/apoptosis_necrosis.png')
 ```
 
-**CAM photosynthesis** is a kind of photosynthesis that happens and is regulated by phosphorylation instead of light.
+**Apoptosis**, often referred to as programmed cell death, is a highly regulated process that occurs in multicellular organisms. It is characterized by a series of biochemical events that lead to the controlled and orderly dismantling of cells. Apoptosis is initiated by either extrinsic (death receptor-mediated) or intrinsic (mitochondrial-mediated) pathways. In the intrinsic pathway, various stress signals trigger the release of cytochrome c from mitochondria, which activates caspase enzymes, leading to cell death. In the extrinsic pathway, binding of death ligands to death receptors on the cell surface activates caspase enzymes directly.
 
-CAM photosynthesis is used by plants that live in dry places like succulents (such as cacti) and some tropical plants like orchids. The way they capture carbon dioxide is quite similar to C4 plants. However, CAM plants do something interesting. Instead of separating the two steps of capturing CO~2~ in different parts of the plant, they do it at different times of the day.
+Apoptosis exhibits specific characteristics, including cell shrinkage and condensation of chromatin, as well as the formation of apoptotic bodies, which are small membrane-bound vesicles containing cellular contents. These apoptotic bodies are subsequently phagocytosed by neighboring cells or professional phagocytes, such as macrophages. In terms of its physiological role, apoptosis plays essential roles in various processes, including tissue development, immune system regulation, and the elimination of damaged or infected cells. It helps maintain tissue homeostasis and contributes to overall organismal health.
 
-One notable thing about CAM plants is how they control the opening and closing of their stomata, the tiny pores on their leaves. Unlike most plants that open stomata during the day and close them at night, CAM plants do the opposite. They open their stomata at night and close them during the day. This helps them save water, which is crucial in dry environments.
+**Necrosis**, in contrast to apoptosis, is a form of cell death characterized by rapid and uncontrolled cellular degradation, often resulting from acute injury, ischemia, or toxic insults. Unlike apoptosis, necrosis does not follow a programmed pathway and is associated with inflammation and tissue damage. Necrosis typically involves cellular swelling, organelle dysfunction, and rupture of the plasma membrane, leading to the release of cellular contents into the extracellular space.
 
-However, there's a trade-off. Because CAM plants can't store as much of the substances they make as other plants, they don't grow as much biomass each day.
+Necrosis is not a regulated process and can occur as a result of various insults, such as physical trauma, infection, or exposure to toxins. The inflammatory response triggered by necrotic cell death serves to remove the damaged tissue and initiate repair processes. However, excessive or prolonged necrosis can contribute to tissue damage and exacerbate pathological conditions. Unlike apoptosis, necrosis is generally considered detrimental to organismal health and is often associated with pathological states, including ischemic injury, neurodegenerative diseases, and cancer.
+
+### Caspase Activation
+
+```{r echo = F, fig.cap = 'Caspase Activation', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/caspase_activation.png')
+```
+
+During apoptosis, **caspases**, which are a family of cysteine–aspartic protease enzymes, play a central role in orchestrating the dismantling of the cell. The process begins with the initiation of apoptosis by various signals, such as DNA damage, cellular stress, or signaling molecules from neighboring cells. These signals trigger the activation of initiator caspases, such as caspase 8 and caspase 9.
+
+Initiator caspases exist in an inactive form within the cell until they are activated by apoptotic signals. Once activated, caspase 8 is involved in the extrinsic pathway of apoptosis, while caspase 9 is involved in the intrinsic pathway. Both pathways ultimately converge to activate downstream effector caspases, including caspase 3, caspase 6, and caspase 7.
+
+Activated initiator caspases cleave and activate effector caspases, leading to the amplification of the apoptotic signal and the execution of cell death. Effector caspases, in turn, cleave multiple cellular substrates, including structural proteins, DNA repair enzymes, and signaling molecules, ultimately leading to the characteristic morphological and biochemical changes associated with apoptosis.
+
+### Phagocytosis of Apoptotic Cells
+
+```{r echo = F, fig.cap = 'Phagocytosis of Apoptotic Cells', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/phagocytosis.png')
+```
+
+Phagocytosis of apoptotic cells is a vital process in the clearance of dying cells and the maintenance of tissue homeostasis. When cells undergo apoptosis, they display specific signals on their surface that mark them for recognition and engulfment by phagocytes, such as macrophages and dendritic cells. Here's how phagocytosis of apoptotic cells occurs:
+
+1. **Recognition of Apoptotic Cells:**
+   During apoptosis, dying cells undergo changes in their membrane composition and structure. This includes the exposure of "eat-me" signals, such as phosphatidylserine (PS), on the outer leaflet of the plasma membrane. These signals serve as ligands for receptors on phagocytic cells, facilitating the recognition and binding of apoptotic cells by phagocytes.
+
+2. **Engulfment by Phagocytes:**
+   Once recognized, apoptotic cells are engulfed by phagocytes through a process known as phagocytosis. This involves the extension of pseudopodia around the apoptotic cell, leading to its internalization within a phagocytic vesicle called a phagosome. The phagosome then undergoes maturation, fusing with lysosomes to form a phagolysosome, where the engulfed apoptotic cell is degraded.
+
+3. **Anti-inflammatory Response:**
+   Phagocytosis of apoptotic cells typically triggers an anti-inflammatory response in the phagocytic cell. This is mediated by the release of anti-inflammatory cytokines, such as transforming growth factor-beta (TGF-β), and the inhibition of pro-inflammatory cytokines, such as tumor necrosis factor-alpha (TNF-α) and interleukin-1 beta (IL-1β). This anti-inflammatory response helps to resolve inflammation and prevent tissue damage.
+
+4. **Processing and Clearance:**
+   Within the phagolysosome, the engulfed apoptotic cell is broken down by lysosomal enzymes, leading to the degradation of cellular components into their constituent molecules. These molecules, including amino acids, nucleotides, and lipids, can be recycled by the phagocyte or released back into the extracellular environment. Clearance of apoptotic cells by phagocytosis helps to maintain tissue homeostasis and prevent the release of potentially harmful cellular contents.
+   
+### Pathways of Apoptosis
+
+#### Extrinsic
+
+```{r echo = F, fig.cap = 'Extrinsic Pathway of Apoptosis', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/extrinsic_pathway.png')
+```
+
+The **extrinsic pathway of apoptosis**, also known as the death receptor pathway, is one of the two main pathways by which apoptosis is initiated in multicellular organisms. This pathway is triggered by extracellular signals that bind to death receptors on the cell surface, leading to the activation of caspase enzymes and ultimately resulting in cell death. Here's an overview of the extrinsic pathway:
+
+1. **Initiation:**
+   The extrinsic pathway is initiated by the binding of extracellular death ligands, such as Fas ligand (FasL) or tumor necrosis factor-alpha (TNF-α), to specific death receptors on the cell surface. These death receptors belong to the tumor necrosis factor receptor (TNFR) superfamily and include Fas (CD95/APO-1), TNF receptor 1 (TNFR1), and TNF-related apoptosis-inducing ligand receptor (TRAIL-R).
+
+2. **Formation of Death-Inducing Signaling Complex (DISC):**
+   Binding of the death ligand to its receptor induces conformational changes in the receptor, leading to the recruitment and clustering of adaptor proteins, such as Fas-associated death domain (FADD) and TNF receptor-associated death domain (TRADD), to the cytoplasmic domain of the receptor. These adaptor proteins then recruit procaspase-8 or procaspase-10 to form a multiprotein complex called the Death-Inducing Signaling Complex (DISC) at the cytoplasmic face of the plasma membrane.
+
+3. **Activation of Caspases:**
+   Within the DISC, procaspase-8 or procaspase-10 molecules are brought into close proximity, facilitating their autoactivation by cleavage. Activated caspase-8 or caspase-10 then cleaves and activates downstream effector caspases, such as caspase-3, caspase-6, and caspase-7, initiating the execution phase of apoptosis.
+
+4. **Execution of Apoptosis:**
+   Once activated, effector caspases cleave various cellular substrates, leading to characteristic morphological and biochemical changes associated with apoptosis, including DNA fragmentation, cytoskeletal reorganization, membrane blebbing, and formation of apoptotic bodies. These changes ultimately result in the dismantling of the cell and its phagocytic removal by neighboring cells or professional phagocytes.
+
+#### Intrinsic
+
+```{r echo = F, fig.cap = 'Intrinsic Pathway of Apoptosis', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/intrinsic.png')
+```
+
+The **intrinsic pathway of apoptosis**, also known as the mitochondrial pathway, is a crucial mechanism by which cells initiate programmed cell death in response to internal stress signals, such as DNA damage, cellular injury, or nutrient deprivation. Unlike the extrinsic pathway, which is initiated by external death ligands binding to cell surface death receptors, the intrinsic pathway involves mitochondrial signaling events that lead to the release of pro-apoptotic proteins and the activation of caspase enzymes. Here's an overview of the intrinsic pathway:
+
+1. **Mitochondrial Outer Membrane Permeabilization (MOMP):**
+   The intrinsic pathway is initiated by various intracellular stress signals, such as DNA damage or oxidative stress, which lead to the activation of pro-apoptotic proteins, including Bcl-2-associated X protein (BAX) and Bcl-2-antagonist/killer (BAK). These proteins undergo conformational changes and oligomerize on the outer mitochondrial membrane, leading to mitochondrial outer membrane permeabilization (MOMP).
+
+2. **Release of Pro-Apoptotic Proteins:**
+   MOMP results in the release of pro-apoptotic proteins from the intermembrane space of the mitochondria into the cytoplasm. These proteins include cytochrome c, Smac/DIABLO (Second mitochondria-derived activator of caspases/direct IAP-binding protein with low pI), and apoptosis-inducing factor (AIF). Cytochrome c binds to apoptotic protease-activating factor 1 (Apaf-1), forming the apoptosome complex, which activates caspase-9, an initiator caspase.
+
+3. **Activation of Caspases:**
+   Activation of caspase-9 within the apoptosome complex leads to the activation of downstream effector caspases, such as caspase-3, caspase-6, and caspase-7. These effector caspases orchestrate the execution phase of apoptosis by cleaving various cellular substrates, leading to the characteristic morphological and biochemical changes associated with cell death.
+
+4. **Regulation by Bcl-2 Family Proteins:**
+   The intrinsic pathway of apoptosis is tightly regulated by members of the Bcl-2 family of proteins, which include both pro-apoptotic (e.g., BAX, BAK, Bid) and anti-apoptotic (e.g., Bcl-2, Bcl-xL) members. The balance between pro-apoptotic and anti-apoptotic Bcl-2 family members determines the susceptibility of cells to undergo apoptosis in response to intracellular stress signals.
+
+5. **Physiological and Pathological Roles:**
+   The intrinsic pathway of apoptosis plays essential roles in various physiological processes, including tissue development, immune system regulation, and the elimination of damaged or infected cells. Dysregulation of this pathway can contribute to various diseases, including cancer, neurodegenerative disorders, and autoimmune diseases.
+
+### Bak, Bax, and Cytochrome C Release
+
+```{r echo = F, fig.cap = 'Bak and Bax Action', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/bak_and_bax.png')
+```
+
+**Bax** and **Bak** are pro-apoptotic members of the Bcl-2 protein family that play a central role in initiating the intrinsic pathway of apoptosis. When cells undergo stress or receive apoptotic signals, inactive monomeric forms of Bax and Bak undergo a conformational change, leading to their activation and oligomerization. Here's how the process unfolds:
+
+1. **Inactive Bax and Bak:**
+   Normally, Bax and Bak exist in an inactive monomeric state within the cytoplasm or associated with intracellular membranes, such as the outer mitochondrial membrane (OMM). In this state, they are unable to induce apoptosis.
+
+2. **Oligomerization of Bax and Bak:**
+   Upon receiving apoptotic signals, such as DNA damage or cellular stress, Bax and Bak undergo a conformational change that exposes their hydrophobic domains. This change allows multiple Bax and Bak molecules to interact and form oligomeric complexes on the OMM.
+
+3. **Permeabilization of the Outer Mitochondrial Membrane (MOMP):**
+   The oligomerization of Bax and Bak leads to the permeabilization of the outer mitochondrial membrane (MOMP). This process allows the release of pro-apoptotic proteins, including cytochrome c, from the intermembrane space of the mitochondria into the cytoplasm.
+
+4. **Cytochrome c Release:**
+   Cytochrome c is a key protein involved in the intrinsic pathway of apoptosis. Once released into the cytoplasm following MOMP, cytochrome c binds to apoptotic protease-activating factor 1 (Apaf-1), leading to the formation of the apoptosome complex.
+
+5. **Activation of Caspases:**
+   The apoptosome complex activates caspase-9, an initiator caspase, which in turn activates downstream effector caspases, such as caspase-3, caspase-6, and caspase-7. These effector caspases execute the apoptotic program by cleaving various cellular substrates, ultimately leading to cell death.
+   
+### Inactivating Bak and Bax with Bcl-2
+
+```{r echo = F, fig.cap = 'Inactivation of Bak and Bax', fig.align = 'center'}
+knitr::include_graphics('../imgs/week5/inactivation.png')
+```
+
+Bcl-2 plays a crucial role in preventing apoptosis by inhibiting the activation of Bax and Bak. Here's how Bcl-2 inhibits Bax and Bak:
+
+1. **Binding and Sequestration:**
+   Bcl-2 can directly bind to Bax and Bak, preventing their activation and oligomerization. By sequestering Bax and Bak in an inactive state, Bcl-2 inhibits their ability to permeabilize the outer mitochondrial membrane (MOMP) and release pro-apoptotic proteins such as cytochrome c.
+
+2. **Maintenance of Mitochondrial Integrity:**
+   Bcl-2 also helps maintain mitochondrial integrity by stabilizing the outer mitochondrial membrane and preventing its permeabilization. This stabilization further contributes to the inhibition of Bax and Bak activation and the prevention of cytochrome c release.
+
+3. **Inhibition of Apoptotic Signaling:**
+   By inhibiting Bax and Bak, Bcl-2 blocks the initiation of the intrinsic pathway of apoptosis. This prevents the downstream activation of caspases and the execution of the apoptotic program. As a result, cells are protected from undergoing apoptosis even in the presence of apoptotic stimuli.
+
+4. **Regulation of Cell Fate:**
+   The balance between pro-apoptotic proteins like Bax and Bak and anti-apoptotic proteins like Bcl-2 determines the fate of the cell. In healthy cells, the presence of Bcl-2 maintains this balance, promoting cell survival. However, under conditions of cellular stress or damage, the balance may shift towards pro-apoptotic signaling, leading to the activation of Bax and Bak and the initiation of apoptosis.
+   
+### BH3-Only Proteins
+
+**BH3-only proteins** play a crucial role in regulating apoptosis by modulating the activity of Bcl-2 family proteins. These proteins are so named because they contain only the BH3 (Bcl-2 homology 3) domain, which is essential for their pro-apoptotic function. Here's how BH3-only proteins function in the intrinsic pathway of apoptosis:
+
+1. **Production or Activation of BH3-only Protein:**
+   BH3-only proteins can be produced in response to various cellular stress signals, such as DNA damage, nutrient deprivation, or growth factor withdrawal. Alternatively, existing BH3-only proteins may become activated through post-translational modifications or changes in cellular localization. Once produced or activated, BH3-only proteins serve as sensors of cellular stress and initiate apoptotic signaling pathways.
+
+2. **Inactivation of Bcl-2:**
+   BH3-only proteins exert their pro-apoptotic effects by binding to and inhibiting the anti-apoptotic members of the Bcl-2 family, such as Bcl-2 itself. By binding to Bcl-2, BH3-only proteins disrupt its anti-apoptotic function, thereby promoting apoptosis. This frees up pro-apoptotic proteins like Bax and Bak to initiate the intrinsic pathway of apoptosis.
+
+3. **Bax, Bak Activation (Oligomerization):**
+   In the absence of inhibition by anti-apoptotic Bcl-2 proteins, pro-apoptotic proteins like Bax and Bak become activated and undergo oligomerization. Oligomerization refers to the formation of multimeric complexes of Bax and Bak proteins on the outer mitochondrial membrane. These oligomeric complexes lead to mitochondrial outer membrane permeabilization (MOMP), resulting in the release of pro-apoptotic proteins such as cytochrome c into the cytoplasm.
 

@@ -1,423 +1,312 @@
-# Cell Walls and Lipids
+# Singalling Pathways and Telomeres in Aging
 
-Imagine the cell wall as a vital part of a plant's body, sort of like its skeleton. It's a sturdy structure that makes up a big part of the plant's overall mass. In fact, about 70% of the total plant material on Earth comes from plant cell walls.
+## Signalling Pathways
 
-When you think about trees, for example, most of what you see is their cell walls. If plants didn't have cell walls, trees would look more like gooey, blobby things rather than the strong and tall giants we're familiar with.
-
-Think of the cell wall as a bit like the skin of a plant cell. Just like our skin holds us together and gives us our shape, the cell wall plays a similar role for plant cells.
-
-All plant cells have this strong primary cell wall that surrounds them. This wall helps determine the shape and function of the cell. Imagine if a plant cell were like a balloon, and the cell wall was the rubbery part that kept it from getting too big and floppy.
-
-```{r echo = F, fig.cap = 'Secondary Walls Among the Primary Wall', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/cell_walls.png')
+```{r echo = F, fig.cap = 'Mechanism of mTORC1', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/mtorc1.png')
 ```
 
-One important job of the cell wall is to make sure the cell doesn't soak up too much water. It acts like a barrier to prevent the cell from swelling up like a water balloon.
+**mTORC1 (mechanistic target of rapamycin complex 1)** is a central regulator of cell growth, metabolism, and proliferation in response to various environmental cues, including nutrient availability, energy status, growth factors, and stress signals. Here's how mTORC1 regulates cell growth:
 
-But here's the cool part: the cell wall isn't just for protection. It's also like armor against bad guys. It acts as a tough shield that keeps out pathogens (like plant diseases) and other harmful invaders.
+1. **Nutrient Sensing:**
+   mTORC1 acts as a nutrient sensor, integrating signals from amino acids, glucose, lipids, and other metabolites to regulate cellular metabolism and growth. Amino acids, particularly leucine and arginine, are potent activators of mTORC1, promoting its translocation to the lysosomal membrane where it becomes activated.
 
-In some cells, they create extra strong walls inside the basic wall. These extra walls are called secondary walls, and they're like extra layers of protection.
+2. **Activation by Growth Factors:**
+   Growth factors such as insulin, insulin-like growth factor 1 (IGF-1), and epidermal growth factor (EGF) activate mTORC1 signaling through the phosphoinositide 3-kinase (PI3K)/Akt pathway. Upon growth factor stimulation, Akt phosphorylates and inhibits tuberous sclerosis complex 2 (TSC2), relieving its inhibitory effect on mTORC1 and promoting its activation.
 
-The primary walls, which come first when cells are growing, are pretty thin and not very complex in structure. They're like the starting point for a cell's outer layer.
+3. **Cellular Energy Status:**
+   mTORC1 activity is also influenced by cellular energy levels, particularly through the AMP-activated protein kinase (AMPK) pathway. AMPK, a sensor of cellular energy depletion, inhibits mTORC1 by phosphorylating TSC2 and raptor, leading to mTORC1 inhibition and energy conservation during metabolic stress.
 
-When you have neighboring cells, the part that sticks them together is known as the Middle Lamella. Think of it as a sort of glue that holds the cells together.
+4. **Regulation of Protein Synthesis:**
+   mTORC1 promotes protein synthesis by phosphorylating and activating key downstream effectors, including ribosomal protein S6 kinase 1 (S6K1) and eukaryotic initiation factor 4E-binding protein 1 (4E-BP1). Activation of S6K1 leads to the phosphorylation of ribosomal proteins and the initiation factors involved in mRNA translation, while phosphorylation of 4E-BP1 releases it from eukaryotic initiation factor 4E (eIF4E), allowing it to initiate cap-dependent translation.
 
-Sometimes, after the cells have grown to their full size, they build these specialized secondary walls inside the primary walls. These secondary walls can be super unique and different in how they're made and what they're made of.
+5. **Lipid Biosynthesis and Lipogenesis:**
+   mTORC1 promotes lipid biosynthesis and lipogenesis by activating sterol regulatory element-binding proteins (SREBPs) and promoting the transcription of genes involved in fatty acid and cholesterol synthesis. This supports the increased demand for membrane biogenesis and lipid storage during cell growth and proliferation.
 
-## Revision on Sugars
+6. **Cell Cycle Progression:**
+   mTORC1 signaling promotes cell cycle progression by regulating the expression of cyclins, cyclin-dependent kinases (CDKs), and cell cycle inhibitors. Activation of mTORC1 promotes entry into the cell cycle and progression through the G1 phase, facilitating cell growth and proliferation.
+   
+### mTORC1 and mTORC2
 
-```{r echo = F, fig.cap = 'Illustration of an Anomeric Carbon', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/sugars.png')
-knitr::include_graphics('../imgs/week7/sugar_base2.png')
+```{r echo = F, fig.cap = 'Differences Between mTORC1 and mTORC2', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/mtorc1and2.png')
 ```
 
-When we talk about sugars, there's something interesting that happens. You see, these sugars can change their shape, a bit like opening and closing a ring. This change in shape creates two different forms, which we call alpha (α) and beta (β) conformations, at a special carbon called the anomeric carbon.
+mTOR (mechanistic target of rapamycin) exists in two distinct complexes: mTORC1 and mTORC2. While both complexes share the mTOR kinase as a core component, they have different compositions, substrates, and cellular functions. Here's an overview of mTORC1 and mTORC2:
 
-Now, here's the twist. Once these sugars join together to make a bigger sugar chain, we can't change their shape anymore. It's like they get locked into one of these alpha or beta forms, and they stay that way.
+1. **mTORC1 (mechanistic target of rapamycin complex 1):**
+   - Composition: mTORC1 consists of mTOR, regulatory-associated protein of mTOR (RAPTOR), mammalian lethal with SEC13 protein 8 (mLST8), proline-rich Akt substrate 40 kDa (PRAS40), and DEP domain-containing mTOR-interacting protein (DEPTOR).
+   - Activation: mTORC1 is primarily activated by growth factors, amino acids, energy status, and stress signals. Growth factors such as insulin and insulin-like growth factor 1 (IGF-1) activate mTORC1 through the PI3K/Akt pathway, while amino acids, particularly leucine, activate mTORC1 by promoting its translocation to the lysosomal membrane.
+   - Substrates and Functions: mTORC1 regulates protein synthesis, lipid metabolism, autophagy, and cell growth by phosphorylating downstream effectors such as ribosomal protein S6 kinase 1 (S6K1) and eukaryotic initiation factor 4E-binding protein 1 (4E-BP1). Activation of mTORC1 promotes protein synthesis, lipid biosynthesis, and cell proliferation, while inhibiting autophagy.
 
-### Sugar Polymerization
+2. **mTORC2 (mechanistic target of rapamycin complex 2):**
+   - Composition: mTORC2 consists of mTOR, rapamycin-insensitive companion of mTOR (RICTOR), mammalian stress-activated protein kinase-interacting protein 1 (mSIN1), protein observed with RICTOR 1 and 2 (PROTOR1/2), and mLST8.
+   - Activation: mTORC2 is less well understood than mTORC1, but it is activated by growth factors and regulates cell survival, cytoskeletal organization, and metabolism. Growth factor stimulation activates mTORC2 through PI3K/Akt pathway-dependent mechanisms.
+   - Substrates and Functions: mTORC2 phosphorylates downstream effectors such as Akt at Serine 473 (Ser473), protein kinase C (PKC), and serum- and glucocorticoid-inducible kinase 1 (SGK1). Akt phosphorylation by mTORC2 at Ser473 enhances its kinase activity and promotes cell survival, proliferation, and metabolism. Additionally, mTORC2 regulates cytoskeletal dynamics and cell migration through its effects on PKC and SGK1.
 
-Sugars, which are like building blocks in the cell wall, connect to each other through a specific carbon called the anomeric carbon and another part of sugar called a hydroxyl group. This connection is known as a glycosidic linkage, and it's always in the form of a ring.
+### mTORC1 Inhibits Autophagy
 
-```{r echo = F, fig.cap = 'Structure of Starch', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/starch_structure.png')
+```{r echo = F, fig.cap = 'mTORC1 Inhibiting Autophagy', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/mtorc1_auto.png')
 ```
 
-Now, the special thing is that the type of connection is determined by which carbon the hydroxyl group is attached to and whether it's in the alpha (α) or beta (β) conformation at the anomeric carbon. This makes a big difference in how these sugars link up.
+Yes, mTORC1 (mechanistic target of rapamycin complex 1) is a potent inhibitor of autophagy, a cellular process responsible for the degradation and recycling of damaged or unnecessary cellular components. Here's how mTORC1 inhibits autophagy:
 
-You might think there are endless ways to connect these sugars because there are so many types of sugar pieces and combinations. It seems like it could get super complex. But, luckily, the major components of the cell wall tend to stick to certain patterns, so there's some order in all this sugar mixing.
-## Cell Wall Biomolecules
+1. **Regulation of Autophagy Initiation:**
+   mTORC1 negatively regulates the initiation of autophagy by phosphorylating and inhibiting key components of the autophagy machinery, including the Unc-51-like kinase 1 (ULK1) complex. ULK1 is a key initiator of autophagy, and its activity is inhibited by phosphorylation by mTORC1. When mTORC1 is active, it phosphorylates ULK1 and inhibits its kinase activity, thereby suppressing the initiation of autophagy.
 
-### Cellulose 
+2. **Inhibition of Autophagy Induction:**
+   mTORC1 also inhibits autophagy induction by regulating the activity of transcription factors involved in the expression of autophagy-related genes. For example, mTORC1 phosphorylates and inhibits the transcription factor EB (TFEB), a master regulator of lysosomal and autophagy gene expression. Inhibition of TFEB by mTORC1 prevents the transcriptional upregulation of genes involved in lysosome biogenesis and autophagy, thereby suppressing autophagy induction.
 
-```{r echo = F, fig.cap = 'Structure of Cellulose', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/cellulose_structure.png')
+3. **Regulation of Autophagosome Formation:**
+   In addition to its effects on autophagy initiation and induction, mTORC1 also regulates the formation of autophagosomes, the double-membraned vesicles responsible for sequestering cellular cargo for degradation. mTORC1 inhibits the formation of autophagosomes by phosphorylating and inhibiting components of the phosphatidylinositol 3-kinase (PI3K) complex, which is required for the nucleation of the autophagosomal membrane.
+   
+### Activation at the Lysosomes
+
+```{r echo = F, fig.cap = 'Activation at Lysosomes', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/lysosomes.png')
 ```
 
-**Cellulose** is a super common type of sugar in plants. It's the most abundant one. When these cellulose sugars get together, they form something called **paracrystalline microfibrils**. These microfibrils are like tiny structures made up of around 36 chains of cellulose all holding hands, or more accurately, they're bonded together by something called **hydrogen bonds**.
+mTORC1 (mechanistic target of rapamycin complex 1) activation at lysosomes is a critical step in the regulation of cell growth, metabolism, and autophagy. Lysosomes serve as signaling platforms for mTORC1 activation in response to various environmental cues, including amino acids, growth factors, and cellular energy status. Here's how mTORC1 is activated at lysosomes:
 
-Each of these cellulose chains is quite long, made up of anywhere from 2,000 to 20,000 individual sugar pieces. That's a lot of sugars in one chain! The interesting thing is that these chains can start and stop in different places within the microfibril. So, inside one of these microfibrils, there can be thousands of these cellulose chains, all doing their thing. It's like a big, complex group of sugars working together.
+1. **Amino Acid Sensing:**
+   Amino acids, particularly essential amino acids such as leucine, arginine, and glutamine, are potent activators of mTORC1 signaling. Upon amino acid stimulation, a series of events occur at the lysosomal surface to promote mTORC1 activation.
 
-#### Cellulosic Scaffolds
+2. **Rag GTPases:**
+   The Rag GTPases, consisting of RagA/B and RagC/D heterodimers, play a central role in amino acid sensing and mTORC1 activation at lysosomes. Rag GTPases are anchored to the lysosomal membrane and function as molecular switches that regulate the recruitment of mTORC1 to lysosomes in response to amino acid availability.
 
-```{r echo = F, fig.cap = 'Cellulose Scaffolds', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/cellulose_scaffolds.png')
+3. **Ragulator Complex:**
+   The Rag GTPases are regulated by the Ragulator complex, a pentameric protein complex associated with the lysosomal surface. The Ragulator complex acts as a guanine nucleotide exchange factor (GEF) for RagA/B, promoting their activation in the presence of amino acids.
+
+4. **Rag-mTORC1 Interaction:**
+   Activated Rag GTPases recruit mTORC1 to the lysosomal surface by interacting with the RAPTOR subunit of mTORC1. The interaction between Rag GTPases and mTORC1 is facilitated by the cytosolic scaffold protein folliculin-interacting protein 1 (FNIP1) and its homolog FNIP2.
+
+5. **Rheb-GTP Loading:**
+   Once recruited to the lysosomes, mTORC1 becomes activated by the small GTPase Ras homolog enriched in brain (Rheb). Rheb is a potent activator of mTORC1 and is localized to the lysosomal membrane in its active, GTP-bound state. Rheb-GTP directly binds to and activates mTORC1, leading to its phosphorylation and activation.
+
+6. **Downstream Signaling:**
+   Activated mTORC1 phosphorylates a multitude of downstream targets involved in protein synthesis, lipid metabolism, and autophagy regulation, thereby coordinating cellular responses to nutrient availability and growth signals.
+   
+### Receptor Tyroskine Kinase Activation
+
+```{r echo = F, fig.cap = 'RTK Activation', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/rtk_activation.png')
 ```
 
-In the plant cell, there's something really cool happening with a structure called the **cellulosic scaffold**. It's like a framework made of cellulose, a type of sugar. But it's not just plain cellulose; there are other sugars involved, like hemi-celluloses, that act as cross-linking glycans.
+**Receptor tyrosine kinases (RTKs)** are cell surface receptors that play crucial roles in signal transduction by initiating intracellular signaling cascades in response to extracellular stimuli such as growth factors, hormones, and cytokines. RTK activation typically occurs through dimerization, a process where two receptor molecules come together to form a functional complex. Here's how RTK activation by dimerization works:
 
-These cross-linking glycans are like a protective coating around the microfibrils, which are those tiny cellulose structures we talked about earlier. They also connect to other glycans and bridge the gap between microfibrils.
+1. **Ligand Binding:**
+   RTKs have an extracellular ligand-binding domain that interacts with specific ligands, such as growth factors or hormones, in the extracellular space. Ligand binding induces a conformational change in the receptor, leading to the formation of an active signaling state.
 
-Now, there are two specific types of these cross-linking glycans: **Xyloglucans (XyGs)** and **Glucoronoarabinoxylans (GAXs)**. **Xyloglucans** are long chains made of glucose, just like cellulose, but they have bits of xylose sugar linked at regular intervals. On the other hand, **Glucoronoarabinoxylans are also long chains of xylose, but they have side branches that connect to** glucuronic acid and arabinose. So, it's like different types of sugars coming together to create this strong and interconnected structure in plant cells.
+2. **Receptor Dimerization:**
+   Ligand binding promotes the association of two RTK monomers, either by bringing pre-existing receptors into close proximity or by inducing receptor clustering on the cell surface. This dimerization event can occur in various configurations, including homodimerization (two identical receptor monomers) or heterodimerization (two different receptor monomers).
 
-### Pectins
+3. **Transphosphorylation:**
+   Upon dimerization, the intracellular tyrosine kinase domains of the RTK monomers become juxtaposed, allowing for cross-phosphorylation of specific tyrosine residues within the kinase activation loop of the opposing receptor. This transphosphorylation event leads to the activation of the RTK's intrinsic kinase activity.
 
-```{r echo = F, fig.cap = 'Pectin Monomers', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/pectins.png')
+4. **Recruitment of Signaling Molecules:**
+   Phosphorylated tyrosine residues on the activated RTK serve as docking sites for various cytoplasmic signaling molecules containing Src homology 2 (SH2) or phosphotyrosine-binding (PTB) domains. These signaling molecules, such as adaptor proteins and enzymes, are recruited to the phosphorylated RTKs, where they become activated or modulate downstream signaling cascades.
+
+5. **Initiation of Downstream Signaling:**
+   The recruitment and activation of downstream signaling molecules at the activated RTKs initiate intracellular signaling cascades that propagate the signal from the cell surface to the nucleus. These signaling pathways regulate diverse cellular processes, including cell proliferation, survival, differentiation, and metabolism, depending on the specific RTK and its associated signaling partners.
+
+### PI3K-AKT-mTOR Signalling Pathway
+
+```{r echo = F, fig.cap = 'PI3K-AKT-mTOR Signalling Pathway', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/pi3k_stuff.png')
 ```
 
-**Pectins** are some of the most soluble carbohydrates found in a plant's cell wall. They're not all the same; in fact, they're quite diverse. Think of them as a bit like a tangled web – they're branched and hold a lot of water, making them very hydrated. This unique structure plays a big role in determining how porous or holey the cell wall is.
+The **PI3K-AKT-mTOR signaling pathway** is a key intracellular signaling pathway involved in the regulation of various cellular processes, including cell growth, proliferation, survival, metabolism, and protein synthesis. Here's an overview of how this pathway operates:
 
-What makes pectins even more interesting is that they're packed with a type of sugar called **D-galacturonic acid**. These pectins are found in high amounts in a part of the cell wall called the middle lamella, and they're in charge of making sure cells stick together. It's like they're the glue that holds plant cells in place.
+1. **Activation of PI3K:**
+   The pathway is initiated by the activation of phosphoinositide 3-kinase (PI3K) in response to extracellular stimuli such as growth factors (e.g., insulin, insulin-like growth factor 1, epidermal growth factor). Upon ligand binding to their respective receptor tyrosine kinases (RTKs), PI3K is recruited to the plasma membrane, where it phosphorylates phosphatidylinositol 4,5-bisphosphate (PIP2) to generate phosphatidylinositol 3,4,5-trisphosphate (PIP3).
 
-One more thing about pectins – they can link to each other in a special way, kind of like forming a gel. You might notice this in jams and jellies. When you heat fruit with pectins and then let it cool, they help create that jelly-like texture, giving it the perfect consistency for your favorite spreads.
+2. **Activation of AKT:**
+   PIP3 serves as a second messenger that recruits AKT (also known as protein kinase B) to the plasma membrane via its pleckstrin homology (PH) domain. Once localized to the membrane, AKT is phosphorylated and activated by phosphoinositide-dependent kinase 1 (PDK1) at threonine 308. Full activation of AKT also requires phosphorylation at serine 473, which can be mediated by mTOR complex 2 (mTORC2) or other kinases.
 
-### Structural Proteins
+3. **AKT-Mediated Signaling:**
+   Activated AKT phosphorylates and regulates numerous downstream targets involved in various cellular processes. Some of the key targets of AKT include:
+   - **mTORC1:** AKT activates mTORC1 by phosphorylating and inhibiting tuberous sclerosis complex 2 (TSC2), leading to the activation of mTORC1 and subsequent stimulation of protein synthesis and cell growth.
+   - **Glycogen synthase kinase 3 (GSK3):** AKT phosphorylates and inhibits GSK3, which regulates glycogen synthesis, protein translation, and cell survival.
+   - **Bad:** AKT phosphorylates and inactivates the pro-apoptotic protein Bad, preventing its association with anti-apoptotic Bcl-2 family members and promoting cell survival.
+   - **FOXO transcription factors:** AKT phosphorylates FOXO transcription factors, leading to their cytoplasmic sequestration and inhibition of their transcriptional activity, which regulates genes involved in apoptosis, cell cycle arrest, and oxidative stress response.
 
-```{r echo = F, fig.cap = 'Structural Protein Examples', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/structural_proteins.png')
+4. **mTOR Signaling:**
+   The activation of mTORC1 by AKT leads to the phosphorylation and activation of downstream effectors such as ribosomal protein S6 kinase 1 (S6K1) and eukaryotic initiation factor 4E-binding protein 1 (4E-BP1). Activation of these effectors promotes protein synthesis, ribosome biogenesis, and cell growth.
+
+5. **Cellular Responses:**
+   The PI3K-AKT-mTOR signaling pathway regulates various cellular processes in response to extracellular cues, including cell growth, proliferation, survival, metabolism, and protein synthesis. Dysregulation of this pathway is implicated in numerous diseases, including cancer, diabetes, and neurological disorders.
+   
+### Insulin and Glucose Uptake
+
+```{r echo = F, fig.cap = 'Cells With and Without Glucose', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/insulin_uptake.png')
 ```
 
-Inside the cell wall, there are special proteins that play important roles in giving the wall its structure. These proteins belong to different classes and are often named after the amino acids that are most common in them.
+**Insulin** plays a central role in the regulation of glucose uptake by cells, particularly in skeletal muscle, adipose tissue, and liver. Here's how insulin facilitates glucose uptake:
 
-One class is called **Hydroxyproline rich glycoproteins**, which includes something called **extensins**. Then, there are **Proline rich proteins** and **Glycine rich proteins**. Another class, **Arabinogalactan proteins** or **AGPs** for short, are really interesting because they can be up to 90% carbohydrate, which is like sugar.
+1. **Insulin Secretion:**
+   After a meal, blood glucose levels rise, triggering the secretion of insulin from pancreatic beta cells. Insulin acts as a hormone that signals cells to take up glucose from the bloodstream.
 
-Now, these proteins have a job to do. One of their possible functions is to help shape and hold the cell wall in place. Think of them as the builders and architects of the plant cell's strong outer layer, making sure it's all put together just right.
+2. **Insulin Receptor Activation:**
+   Insulin binds to its receptor, the insulin receptor (IR), which is a receptor tyrosine kinase located on the cell surface of target cells. Binding of insulin to the IR leads to autophosphorylation and activation of the receptor's tyrosine kinase activity.
 
-## Cell Wall Architecture
+3. **Insulin Signaling Cascade:**
+   Activated insulin receptors phosphorylate intracellular substrates, including insulin receptor substrate proteins (IRS), which serve as docking sites for downstream signaling molecules. Phosphorylated IRS proteins recruit and activate phosphoinositide 3-kinase (PI3K), initiating a signaling cascade.
 
-```{r echo = F, fig.cap = 'Closeup of an Onion Cell', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/onion_cell.png')
+4. **Activation of GLUT4 Translocation:**
+   PI3K activation leads to the phosphorylation and activation of protein kinase B (AKT), which in turn phosphorylates and activates AS160 (Akt substrate of 160 kDa). Phosphorylated AS160 facilitates the translocation of glucose transporter 4 (GLUT4) vesicles from intracellular storage compartments to the cell membrane.
+
+5. **Glucose Uptake:**
+   Upon translocation to the cell membrane, GLUT4 facilitates the uptake of glucose from the extracellular space into the cytoplasm of target cells. In skeletal muscle and adipose tissue, this process significantly increases glucose uptake, allowing cells to utilize glucose for energy production or storage as glycogen or fat.
+
+6. **Glucose Metabolism:**
+   Once inside the cell, glucose undergoes metabolism through glycolysis, the tricarboxylic acid (TCA) cycle, and oxidative phosphorylation to produce ATP, the cell's primary energy source. Additionally, glucose can be stored as glycogen in the liver and muscle or converted to fatty acids for storage in adipose tissue.
+
+## Telomeres and Aging
+
+```{r echo = F, fig.cap = 'End-Replication Problem', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/end_stage.png')
 ```
 
-Let's take a closer look at the primary cell wall's structure. Imagine it like a well-organized building plan.
+**Cellular senescence** is a phenomenon where cells undergo irreversible growth arrest in response to various stressors, such as DNA damage, telomere shortening, oxidative stress, or oncogenic signaling. One of the key mechanisms underlying cellular senescence is the "end-replication problem."
 
-The primary cell wall has a fundamental framework made of **cellulose microfibrils**, which are like strong fibers, and **cross-linking glycans** that act like connectors. These elements come together to create a sort of scaffold.
+The **end-replication problem** refers to the inability of DNA polymerases to fully replicate the ends of linear chromosomes during DNA replication. In eukaryotic cells, chromosomes are capped by structures called **telomeres**, which consist of repetitive DNA sequences and associated proteins. Telomeres play a crucial role in protecting the integrity of chromosomes and preventing the loss of genetic information during DNA replication.
 
-Now, this scaffold is surrounded by a network of **pectic polysaccharides**, which are like a supportive web, giving the cell wall additional structure and texture.
+During each round of DNA replication, the DNA polymerase complex synthesizes new DNA strands in the 5' to 3' direction. However, due to the nature of DNA polymerases and the absence of a primer at the end of the template strand, the replication machinery is unable to replicate the extreme ends of linear chromosomes completely. As a result, with each round of cell division, telomeres progressively shorten.
 
-But there's more to it. Structural proteins play their part by forming a third network within the cell wall. It's like they're an extra layer of support, like steel beams in a building.
+Telomere shortening serves as a "mitotic clock" that limits the replicative lifespan of cells. When telomeres become critically short, they lose their protective function, leading to the activation of DNA damage response pathways and triggering cellular senescence. Additionally, dysfunctional telomeres can undergo inappropriate DNA repair mechanisms, resulting in genomic instability and promoting oncogenic transformation.
 
-Lastly, cell walls can be grouped into two main types based on what they're made of. These differences in composition make them either **Type 1** or **Type 2** cell walls. Think of it like sorting cell walls into two categories depending on what they're built from.
+Cellular senescence mediated by the end-replication problem serves as a tumor suppressive mechanism by preventing the proliferation of cells with damaged or unstable genomes. However, excessive accumulation of senescent cells over time contributes to aging and age-related diseases, as senescent cells secrete pro-inflammatory cytokines, growth factors, and proteases collectively known as the **senescence-associated secretory phenotype (SASP)**, which can disrupt tissue homeostasis and promote chronic inflammation.
 
-### Types of Cell Walls
+### End Replication by Telomerase
 
-```{r echo = F, fig.cap = 'Types of Cell Walls', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/cell_wall_types.png')
+```{r echo = F, fig.cap = 'Telomerase Replication', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/telomerase.png')
 ```
 
-Let's dive into the two main types of cell walls, Type I and Type II, and see what sets them apart.
+**Telomerase** is a specialized enzyme that counteracts the end-replication problem by adding repetitive DNA sequences to the ends of linear chromosomes, known as telomeres. Telomerase activity is particularly important in cells with high proliferative capacity, such as stem cells and cancer cells, as it helps maintain telomere length and ensures genomic stability during repeated rounds of cell division.
 
-1.  **Type I Cell Walls**
+Here's how telomerase mediates the end-replication process:
 
-    In Type I cell walls, you'll find something called **XyG**, which helps to link different parts together. These walls have an extensive matrix of pectin, which acts like a supporting structure. Plus, there are lots of structural proteins, like the builders of the wall, working hard. Interestingly, Type I cell walls don't have a specific network involving phenolic compounds.
+1. **Telomere Structure:**
+   Telomeres consist of repetitive DNA sequences (TTAGGG in humans) and associated proteins that cap the ends of linear chromosomes. Telomeres protect chromosome ends from degradation and prevent them from being recognized as DNA breaks by the cellular DNA repair machinery.
 
-1.  **Type II Cell Walls**
+2. **Telomerase Enzyme:**
+   Telomerase is a ribonucleoprotein complex composed of two main components: a catalytic protein subunit called telomerase reverse transcriptase (TERT) and an RNA component called telomerase RNA (TERC). TERC serves as a template for the synthesis of telomeric DNA by TERT.
 
-    Now, when it comes to Type II cell walls, they're a bit different. Instead of XyG, they use GAX to link things up. These walls have fewer pectins, so it's not as rich in that supportive matrix. Structural proteins are not as abundant as in Type I. What's unique about Type II cell walls is the presence of a phenolic network, mainly made up of hydroxycinnamic acids. It's like an additional layer of protection or reinforcement, making these cell walls distinct from Type I.
-    
-## Cell Wall Synthesis
+3. **Extension of Telomeres:**
+   During DNA replication, the lagging strand of the chromosome cannot be fully replicated due to the end-replication problem. Telomerase acts to extend the telomeres by adding repetitive DNA sequences to the 3' end of the lagging strand.
 
-```{r echo = F, fig.cap = 'Assembling a Cell Wall at the Organelle Level', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/building_cell_walls.png')
+4. **Telomerase Action:**
+   Telomerase extends telomeres in a processive manner by using the RNA template within TERC to synthesize repetitive telomeric DNA sequences onto the chromosome ends. This elongation process compensates for the telomere shortening that occurs during each round of DNA replication.
+
+5. **Telomere Length Maintenance:**
+   By counteracting telomere shortening, telomerase helps maintain telomere length and prevents telomeres from becoming critically short. This ensures the stability of linear chromosomes and promotes cell proliferation and genomic integrity.
+
+6. **Role in Stem Cells and Cancer:**
+   Telomerase activity is particularly high in stem cells and cancer cells, where it helps maintain telomere length and sustains the replicative capacity of these cells. In cancer cells, upregulation of telomerase activity allows for unlimited cell proliferation, contributing to tumor growth and progression.
+
+### DNA Damage Response
+
+```{r echo = F, fig.cap = 'Illustration of the DNA Damage Response', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/dna_damage.png')
 ```
 
-Building a cell wall is a bit like putting together a puzzle where each piece is made in a different factory.
+The **DNA damage response (DDR)** is a complex network of signaling pathways that detects and repairs damaged DNA, maintaining genomic stability and preventing the accumulation of mutations that can lead to diseases such as cancer. The DDR involves a series of coordinated molecular events that are activated in response to various types of DNA damage, including DNA double-strand breaks (DSBs), single-strand breaks (SSBs), cross-links, and base modifications. Here's an overview of the key components and processes involved in the DDR:
 
-First, we have cellulose, which is like the main building material of the cell wall. This is made right at the plasma membrane, which is like the cell's outer skin.
+1. **Detection of DNA Damage:**
+   DNA damage is detected by sensor proteins that recognize specific types of lesions or abnormalities in the DNA structure. These sensor proteins include the MRN complex (MRE11-RAD50-NBS1), Ku70/Ku80 heterodimer, PARP1 (poly(ADP-ribose) polymerase 1), and various DNA damage checkpoint proteins.
 
-Then, there are components like pectins and hemicellulose. These are produced in a part of the cell called the Golgi apparatus. Think of the Golgi apparatus as a factory that specializes in making these important pieces.
+2. **Activation of Checkpoint Signaling:**
+   Upon detection of DNA damage, sensor proteins activate checkpoint signaling pathways to halt the cell cycle and prevent the propagation of damaged DNA to daughter cells. Key checkpoint kinases involved in this process include ATM (ataxia telangiectasia mutated), ATR (ataxia telangiectasia and Rad3-related), and DNA-PK (DNA-dependent protein kinase).
 
-Proteins, on the other hand, are created in the endoplasmic reticulum. Once they're made, they get a little extra sugar added to them in the Golgi apparatus, a process called glycosylation.
+3. **Transduction of DNA Damage Signals:**
+   Activated checkpoint kinases phosphorylate downstream effector proteins, including CHK1 and CHK2, which in turn phosphorylate a variety of target proteins involved in cell cycle regulation, DNA repair, and apoptosis. Phosphorylation of these effector proteins leads to the activation of DNA damage response pathways and the initiation of appropriate cellular responses.
 
-Now, to put everything together, the cell uses tiny transportation vehicles called vesicles. These vesicles carry the different pieces, including cellulose, pectins, hemicellulose, and the modified proteins, to where the cell wall is being formed. It's like a well-coordinated team effort to construct the cell wall.
+4. **DNA Repair Pathways:**
+   The DDR coordinates several DNA repair pathways to remove or repair damaged DNA lesions, including:
+   - **Non-homologous end joining (NHEJ):** Repairs DNA DSBs by directly ligating broken DNA ends together. NHEJ is error-prone and can lead to the introduction of small insertions or deletions.
+   - **Homologous recombination (HR):** Repairs DNA DSBs using an undamaged sister chromatid or homologous DNA sequence as a template. HR is a high-fidelity repair pathway that restores the original DNA sequence.
+   - **Base excision repair (BER):** Repairs damaged DNA bases and single-strand breaks by excising the damaged nucleotide and replacing it with a new one.
+   - **Nucleotide excision repair (NER):** Repairs bulky DNA lesions, such as UV-induced thymine dimers or chemical adducts, by removing a short stretch of nucleotides surrounding the lesion and replacing it with newly synthesized DNA.
 
-### Building Cellulose Microfibrils
+5. **Cellular Responses:**
+   Depending on the extent and type of DNA damage, cells may undergo various responses, including cell cycle arrest, DNA repair, senescence, or apoptosis. These responses are critical for maintaining genomic integrity and preventing the propagation of damaged DNA to daughter cells.
 
-```{r echo = F, fig.cap = 'Microfibril Synthesis', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/microfibril_synthesis.png')
+### Shelterin
+
+```{r echo = F, fig.cap = 'Shelterin', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/shelterin.png')
 ```
 
-The process begins at the plasma membrane, which is like the cell's outer skin. Here, there's a special protein called **cellulose synthase**. It's like a tiny factory that creates cellulose.
+**Shelterin** is a protein complex that plays a critical role in protecting and regulating the structure of telomeres, the repetitive DNA sequences located at the ends of linear chromosomes. Telomeres function to maintain chromosome stability by preventing the ends of chromosomes from being recognized as DNA breaks and undergoing inappropriate DNA repair or degradation processes. Shelterin proteins bind to telomeric DNA and help to form a specialized nucleoprotein structure that shields telomeres from being recognized as damaged DNA.
 
-This cellulose synthase makes what we call **rosettes**. These are like groups of machines working together, and they take a special type of sugar called UDP-glucose, which comes from sucrose, and turn it into cellulose.
+The Shelterin complex consists of several key protein components, each with specific functions:
 
-To help guide these rosettes, microtubules come into play. **Microtubules** are like tracks that direct the movement of the cellulose synthase complexes, making sure they create cellulose in the right places. It's a bit like a train track for these cellulose-making machines.
+1. **TRF1 (Telomeric Repeat-binding Factor 1) and TRF2 (Telomeric Repeat-binding Factor 2):**
+   TRF1 and TRF2 are DNA-binding proteins that specifically recognize and bind to double-stranded telomeric DNA. They play essential roles in forming and maintaining the structure of telomeres by facilitating the formation of higher-order telomeric loops, known as T-loops. TRF2 is particularly important for protecting telomeres from being recognized as DNA double-strand breaks and promoting telomere end-capping.
 
-### Incorporating New Cell Wall Polymers
+2. **TIN2 (TRF1-interacting Nuclear factor 2):**
+   TIN2 serves as a central scaffold protein within the Shelterin complex, interacting with TRF1, TRF2, and other Shelterin components. TIN2 helps to stabilize the Shelterin complex and regulate its interactions with other proteins involved in telomere maintenance and DNA repair.
 
-```{r echo = F, fig.cap = 'Cell Wall Growth', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/cell_wall_growth.png')
+3. **RAP1 (Repressor/activator Protein 1):**
+   RAP1 binds to the telomeric DNA sequence in a sequence-specific manner and interacts with TRF2. RAP1 plays a role in regulating telomere length and function, as well as in coordinating telomere maintenance with other cellular processes such as transcriptional regulation and DNA repair.
+
+4. **POT1 (Protection of Telomeres 1):**
+   POT1 binds specifically to the single-stranded DNA overhang present at the 3' end of telomeres. POT1 protects telomeres from inappropriate DNA damage responses and regulates telomere length by interacting with telomerase and regulating its access to telomeric DNA.
+
+5. **TPP1 (Adrenocortical Dysplasia Homolog (ACD) Protein 1):**
+   TPP1 interacts with POT1 and TIN2 within the Shelterin complex and plays a crucial role in stabilizing POT1 binding to telomeric DNA. TPP1 also facilitates the recruitment and activation of telomerase at telomeres, promoting telomere elongation and maintenance.
+
+#### Telomerase and Shelterin
+
+```{r echo = F, fig.cap = 'Telomere Loop', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/tloop.png')
 ```
 
-Plant cells have a unique way of growing. They can get much larger – sometimes thousands of times their original size – while keeping their cell wall thickness constant. The force driving this expansion is called turgor pressure, a bit like blowing up a balloon. It pushes the cell outward.
+The telomere loop, or T-loop, is a specialized nucleoprotein structure that forms at the ends of linear chromosomes, where telomeric DNA sequences are located. The T-loop plays a crucial role in protecting chromosome ends from being recognized as DNA double-strand breaks and from undergoing inappropriate DNA repair processes. It consists of the single-stranded 3' overhang of telomeric DNA invading and pairing with double-stranded telomeric DNA upstream, creating a looped structure.
 
-Now, the rate at which a cell grows is carefully controlled. It's like a well-managed construction project. The cell regulates its growth by a process called **wall loosening**. This means it separates the microfibrils, which are like tiny building blocks, and adds new polymers. These polymers are fresh materials that help the cell wall expand. So, it's like taking apart some bricks and adding new ones to make the wall bigger.
+Telomerase and Shelterin proteins work together to solve the end-replication problem and maintain telomere integrity:
 
-Most cells grow evenly, like inflating a balloon, but some have a different style. They display **tip growth**, which is when only one end of the cell gets longer. Think of it like a balloon that's being inflated more at one end than the other. This tip growth happens in special cells like root hairs and pollen tubes, and it's essential for their functions.
+1. **Telomerase:**
+   Telomerase is a specialized enzyme that adds repetitive DNA sequences to the ends of chromosomes, compensating for the loss of telomeric DNA during each round of DNA replication. Telomerase contains an RNA component (TERC) that serves as a template for synthesizing telomeric DNA and a catalytic protein component (TERT) that carries out the DNA synthesis reaction. By adding telomeric repeats to chromosome ends, telomerase helps counteract the gradual shortening of telomeres and ensures their stability.
 
-### Cell Walll Loosening
+2. **Shelterin Complex:**
+   The Shelterin complex is a group of proteins that bind to telomeric DNA and help maintain the structural integrity of telomeres. Key components of the Shelterin complex include TRF1, TRF2, TIN2, RAP1, POT1, and TPP1. Shelterin proteins play essential roles in protecting telomeres from being recognized as DNA damage sites, regulating telomere length, and coordinating telomere maintenance with other cellular processes.
 
-```{r echo = F, fig.cap = 'Cell Wall Loosening', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/loosening.png')
+Together, telomerase and Shelterin proteins collaborate to solve the end-replication problem and maintain telomere stability. Telomerase adds telomeric repeats to chromosome ends, counteracting telomere shortening, while Shelterin proteins help form and stabilize the T-loop structure, preventing chromosome ends from being recognized as DNA breaks and protecting them from inappropriate DNA repair mechanisms.
+
+### Cellular Senescence
+
+```{r echo = F, fig.cap = 'Cellular Senescence', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/cellular_senesence_in)aging.png')
 ```
 
-There are special enzymes involved in this process. One of them is called **Xyloglucan endotransglycosylase**, or **XET** for short. XET can do something really interesting – it can cut and reattach XyG chains. This ability allows for a temporary slipping or shifting of microfibrils, those tiny building blocks in the cell wall. It's like rearranging bricks to make space for expansion.
+Cellular senescence is a process in which cells undergo irreversible growth arrest in response to various stressors, such as DNA damage, telomere shortening, oncogene activation, or oxidative stress. Senescent cells display distinct phenotypic changes, including altered gene expression patterns, increased secretion of inflammatory cytokines and growth factors (known as the senescence-associated secretory phenotype or SASP), and changes in cell morphology.
 
-Another set of enzymes, called **Expansins**, have a less clear function, but they seem to play a role in breaking hydrogen bonds between cellulose and cross-linking glycans. It's a bit like dismantling the connections between parts of the cell wall, which helps in cell expansion. These Expansins are pretty unique because they are the only enzymes known to cause cell expansion in a lab setting. So, they have a special job in the cell wall loosening process.
+One of the key triggers for cellular senescence is telomere shortening. Telomeres are repetitive DNA sequences located at the ends of linear chromosomes, and they protect chromosome ends from degradation and fusion with neighboring chromosomes. During each round of cell division, telomeres undergo gradual shortening due to the end-replication problem, where DNA polymerases are unable to fully replicate the ends of linear chromosomes.
 
-## Secondary Cell Walls
+In normal somatic cells, telomerase activity is typically repressed or downregulated, leading to progressive telomere shortening with each cell division. Eventually, telomeres become critically short, triggering a DNA damage response and cellular senescence. This downregulation of telomerase expression in somatic cells serves as a tumor suppressive mechanism, as it limits the proliferative potential of cells and prevents the accumulation of genetic mutations that could lead to cancer.
 
-```{r echo = F, fig.cap = 'Illustration of a Secondary Cell Wall', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/secondary_cell_walls.png')
+The regulation of telomerase expression in somatic cells is complex and involves multiple factors, including epigenetic modifications, transcriptional regulation, and telomere-associated proteins. Various signaling pathways, such as the p53/p21 and p16INK4a/Rb pathways, play important roles in controlling telomerase expression and cellular senescence. For example, activation of the p53 tumor suppressor pathway in response to DNA damage or other stress signals can lead to transcriptional repression of the TERT gene, which encodes the catalytic subunit of telomerase.
+
+### Shelterin and Non-Homologous End Joining
+
+```{r echo = F, fig.cap = 'NHEJ and Shelterin', fig.align = 'center'}
+knitr::include_graphics('../imgs/week7/nh3j.png')
 ```
 
-After the primary cell wall is in place, certain cells go a step further by creating something called **secondary cell walls**.
+Telomeres play a critical role in maintaining genomic stability by protecting chromosome ends from being recognized as DNA double-strand breaks (DSBs) and undergoing inappropriate DNA repair mechanisms. Dysfunctional telomeres, resulting from excessive shortening or loss of telomeric proteins, can lead to genome instability and contribute to the development of cancer.
 
-These secondary walls are a bit different. They contain more cellulose compared to the primary wall, making them stronger and more rigid. They are also filled with a substance called lignin, which is a complex polymer made from smaller building blocks known as **phenylpropanoid subunits**.
+The **Shelterin complex**, comprised of several key proteins including TRF1, TRF2, TIN2, RAP1, POT1, and TPP1, is essential for maintaining telomere integrity and function. Shelterin proteins bind to telomeric DNA and help form a specialized nucleoprotein structure that protects chromosome ends. One of the critical functions of Shelterin is to prevent non-homologous end joining (NHEJ) at telomeres.
 
-Lignin forms a hydrophobic, or water-repelling, network that is physically interwoven with the matrix polysaccharides in the cell wall. This makes the secondary wall tough and resistant. It's like adding a protective layer to the cell.
+NHEJ is an error-prone DNA repair pathway that directly ligates broken DNA ends together, often resulting in the loss or addition of nucleotides and potentially leading to chromosomal rearrangements or deletions. At dysfunctional telomeres, NHEJ-mediated repair can result in telomere fusion, chromosome end-to-end fusions, or other chromosomal abnormalities, all of which contribute to genome instability and promote tumorigenesis.
 
-However, this toughness has a downside. It makes plant materials less digestible. So, while the secondary cell wall provides extra strength, it also makes it harder for animals to break down and digest the plant.
+Shelterin proteins help prevent NHEJ at telomeres through several mechanisms:
 
-### Importance of Cell Walls
+1. **TRF2-Mediated Protection:** TRF2 plays a key role in protecting telomeres from being recognized as DSBs and inhibiting the activation of the DNA damage response (DDR) at chromosome ends. By forming a protective cap at telomeres, TRF2 prevents the binding of NHEJ factors and blocks the initiation of inappropriate DNA repair processes.
 
-Cell walls are actually quite important for us, and here's why:
+2. **Inhibition of Ku70/Ku80:** The Ku70/Ku80 heterodimer is a critical component of the NHEJ pathway and is involved in DNA end recognition and tethering during repair. Shelterin proteins, particularly TRF2, have been shown to inhibit the recruitment and function of Ku70/Ku80 at telomeres, thereby preventing NHEJ-mediated repair.
 
-Firstly, they serve as a **massive carbon sink**. This means that they can store a lot of carbon, which is essential for addressing climate change. When we think of carbon storage, we might picture vast forests and woodlands – and indeed, wood, which is made up of cell walls, is a significant contributor to this carbon storage.
-
-```{r echo = F, fig.cap = 'Using CelL Walls to Make Biofuel', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/biofuel.png')
-```
-
-We also rely on cell walls for a variety of practical purposes. They are used in the construction of buildings and as fuel sources. Paper is another everyday item that wouldn't exist without cell walls. Additionally, cell walls are considered valuable feedstock for biofuels. When we're talking about biofuels, we mean fuels made from natural resources, like plant material, rather than fossil fuels.
-
-Looking ahead, the field of biotechnology is exploring ways to make cell walls more accessible and easier to digest. This opens up exciting possibilities for the future. It could lead to innovations in energy production, materials, and even new ways of using plants in our daily lives. So, cell walls have a big role in both the present and the future.
-
-## Lipids
-
-Plant lipids are a diverse group of molecules that really like to hang out in non-water-based solvents, which makes them different from many other substances in plants.
-
-Now, these lipids have some important jobs in the plant world. For starters, they're crucial for building cell membranes. The two main types of lipids involved in this are phospholipids and glycolipids. Together, they create a kind of waterproof barrier around cells, like a protective shield.
-
-```{r echo = F, fig.cap = 'Energy Gain From Burning Fat versus Sugar', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/fat_energy.png')
-```
-
-Lipids also serve as energy storage units in plants. When you burn lipids, you get more energy than from carbohydrates, which makes them super efficient for energy storage. And because they're not very water-friendly, they don't trap as much water as carbohydrates, so they provide more energy for their weight.
-
-There's also a plant called *Elaeis guineensis*, which is the most productive oil crop globally. It's like the superstar of oil production in the plant kingdom.
-
-```{r echo = F, fig.cap = 'Picture of *Elaeis guineensis*', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/fat_plant.png')
-```
-
-Additionally, plants use fatty acids found in lipids to create waxes that coat and shield them from the environment. Think of it like plants wearing a protective coat to stay safe.
-
-Lastly, lipids have a role in creating jasmonic acid, which helps plants defend themselves against insects. So, they're not just structural and energy storage molecules; they're also part of a plant's defense system.
-
-### Lipid Structure and Naming
-
-```{r echo = F, fig.cap = 'Naming Conventions and Structures of Lipids', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/naming_lipids.png')
-```
-
-Lipids often consist of fatty acids joined to glycerol. Fatty acids are named in a specific way. Their name tells us about their structure.
-
-The name of a fatty acid tells us two things: the number of carbon atoms it has and the number and position of double bonds. For instance, if a fatty acid has 18 carbon atoms and 2 double bonds, it would be called "18:2."
-
-The subscript in the name also indicates where these double bonds are located in unsaturated fatty acids. If the double bonds have a "cis" orientation, it's denoted as "c," while "trans" orientation is labeled as "t." Trans isomers are pretty rare in nature.
-
-So, when you see a name like "18:2 c," it means the fatty acid has 18 carbon atoms, 2 double bonds, and the double bonds have a "cis" orientation. This naming system helps scientists understand the structure of different fatty acids in lipids.
-
-### Glyceroglycolipids and Glycerophospholipids
-
-Plant cells use different types of lipids to build their membranes, and this has some interesting implications.
-
-```{r echo = F, fig.cap = 'Examples of Glyceroglycolipids and Glycerophospholipids', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/glylipids.png')
-```
-
-First, there are **glycerophospholipids**. These are found in most plant membranes and are also the dominant lipids in animal membranes. They make up a significant part of the structural foundation of these membranes.
-
-Then, there are **glyceroglycolipids**. These are especially associated with chloroplast membranes, which are the green structures in plant cells responsible for photosynthesis. It's like they have their own special kind of lipids.
-
-What's intriguing is that in some plant leaves, up to 75% of the total membrane lipids are glyceroglycolipids. This might be a clever adaptation because it reduces the plant's reliance on a valuable nutrient, phosphate. By using glyceroglycolipids, plants might be saving precious resources, and this could be particularly important in nutrient-poor environments. So, the choice of lipids in membranes can have a big impact on how plants manage their resources.
-
-## Fatty Acid Biosynthesis
-
-```{r echo = F, fig.cap = 'Biosynthesis of Fatty Acids', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/biosynthesis.png')
-```
-
-The process of fatty acid biosynthesis happens through a series of steps, involving cycles of adding two carbon atoms at a time.
-
-1.  The first critical step starts with **acetyl CoA**, a molecule with two carbon atoms. It gets transformed into **malonyl CoA**, which has three carbon atoms. This step is crucial because it commits the plant to making fatty acids.
-
-1.  The malonyl group is then moved to another molecule called **acyl carrier protein (ACP)**.
-
-1.  Malonyl ACP combines with acetyl CoA, and this process releases carbon dioxide (CO2).
-
-1.  In the following steps, the keto group in the molecule is reduced to create a hydrocarbon. Malonyl ACP is mixed with the substrate to add another two carbon atoms. These new carbons are then reduced, and the process continues, with malonyl ACP being added repeatedly. This cycle continues until we have a fatty acid chain with 16 to 18 carbon atoms.
-
-These condensation reactions, where molecules come together to build the fatty acid, are made possible by an enzyme called **3-ketoacyl-ACP synthase**, often referred to as **KAS**.
-
-### Acyl Carrier Protein
-
-During the process of fatty acid synthesis, special carrier proteins come into play to transport the intermediates, which are the in-between products of this complex process.
-
-```{r echo = F, fig.cap = 'Illustration of Acyl Carrier Proteins', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/acp.png')
-```
-
-One of these carrier proteins is called **acyl carrier protein (ACP)**. It's a relatively small protein, consisting of 80 to 90 amino acids. What's really cool about ACP is that it has a **phosphopantetheine linker**. This linker acts like a flexible bridge, allowing the fatty acid intermediates to move around and access different enzyme sites where they undergo further processing. It's a bit like a transportation system within the cell.
-
-To make things even more efficient, the enzymes involved in fatty acid biosynthesis work together as a team. They form a complex called **Fatty Acid Synthase**, where all the active sites are close to each other. In plants and bacteria, the enzymatic activities are organized into separate chains, while in animals, they're part of a single, long protein chain. Regardless of this organizational difference, the reactions themselves are essentially the same. So, these carrier proteins and enzyme complexes are like choreographers in a well-coordinated dance, ensuring that the fatty acids are made efficiently and accurately.
-
-### KAS Isoforms
-
-Creating new carbon-carbon bonds is a key part of making fatty acids, and different enzymes are responsible for forming these bonds.
-
-```{r echo = F, fig.cap = 'KAS Isoforms', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/kas_isoforms.png')
-```
-
-In all plants, you can find three versions, or isoforms, of an enzyme called 3-ketoacyl-ACP synthase. These enzymes are responsible for what we call "condensing," which is the process of bringing different pieces together to form the carbon-carbon bonds.
-
-Each of these isoforms has a specific job because they are picky about the types of molecules they work with. 
-
-1. **KAS III:** This one prefers to work with acetyl CoA, a molecule with two carbon atoms. It's like the starter in the fatty acid-making process. When it gets going, it initiates the whole fatty acid synthesis.
-
-2. **KAS I:** KAS I is most active when it's dealing with acyl ACPs that have carbon chains ranging from 4 to 14 carbon atoms. It's like the middleman in the process, dealing with medium-sized pieces.
-
-3. **KAS II:** KAS II, on the other hand, only works with long carbon chains, specifically those containing 10 to 16 carbon atoms. It's like the closer, completing the final stages of fatty acid synthesis.
-
-These isoforms are like a team of specialized workers, each with their specific role, ensuring that fatty acids are made correctly with the right carbon-carbon bonds.
-
-### Making Long Chain Fatty Acids
-
-Producing long-chain fatty acids is quite an intricate process and relies on specialized elongase systems.
-
-Some fatty acids can be quite long, with chains extending to C20 and C22, while waxes are made from even longer C26 to C32 fatty acids.
-
-In the plastid, where fatty acid synthesis mainly takes place, the process typically yields C18 fatty acids, but what about the longer ones? Well, that's where a different system comes into play. To create these longer fatty acids, a cytosolic membrane-bound elongase system is used.
-
-This elongase system involves a series of reactions similar to those in fatty acid synthesis, but it doesn't require the acyl carrier protein (ACP). Instead, there are specific enzymes involved:
-
-1. KCS – 3-ketoacyl CoA synthase
-2. KR – 3-ketoacyl CoA reductase
-3. DH - 3-ketoacyl CoA dehydrogenase
-4. ER – enoyl-CoA reductase
-
-These enzymes work together to extend the fatty acid chain. However, these elongase systems are relatively less understood compared to other parts of fatty acid metabolism, making them an interesting area for further research.
-
-### Unusual Fatty Acids
-
-```{r echo = F, fig.cap = 'Unusual Fatty Acids', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/unusual_fatty_acids.png')
-```
-
-The world of fatty acids is incredibly diverse, with hundreds of unusual ones that aren't found in many plant species. What's intriguing is that these unique fatty acids are often discovered in the seed oils of only a few specific plant species. This distribution pattern suggests that these fatty acids may have evolved independently multiple times, a phenomenon known as convergent evolution.
-
-These unusual fatty acids serve various purposes, and one of them might be defense. Some of these fatty acids could be toxic or difficult for animals to digest, serving as a way to protect the plant from herbivores.
-
-Interestingly, the enzymes responsible for making these unique fatty acids closely resemble the standard fatty acid biosynthesis enzymes. It's as though evolution has found it relatively easy to modify these enzymes to perform new tasks. For example, it appears that evolving the ability to add hydroxyl groups (a type of oxygen and hydrogen combination) to a fatty acid chain can happen from enzymes that were originally involved in adding double bonds. This adaptability in enzyme function is part of the amazing diversity of life and the unique ways that plants adapt to their environments.
-
-## Stopping Fatty Acid Biosynthesis
-
-```{r echo = F, fig.cap = 'Fatty Acid Biosynthesis', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/fa_biosynthesis.png')
-```
-
-The process of fatty acid biosynthesis doesn't go on forever; it has a planned ending. To wrap it up, there are specific enzymes that come into play.
-
-In plants, there are two types of thioesterases, which are enzymes that help complete the process:
-
-1. **FatA:** This thioesterase is most active with a fatty acid called 18:1$\Delta$9. It's like the one in charge of finalizing the longer unsaturated fatty acids.
-
-2. **FatB:** On the other hand, FatB is more active with shorter and saturated fatty acids. It's like the specialist for shorter fatty acids.
-
-Now, once the fatty acid has been properly prepared, it's time to move it out of the plastid, which is a part of the cell where this whole process takes place. However, the exact mechanism for how this is done remains a bit of a mystery, as it's not entirely clear how the fatty acid is targeted and transported out of the plastid. It's like the final stage of this journey still has some secrets to be uncovered.
-
-### Plant Fatty Acid Biosynthesis in the Grander Scheme
-
-```{r echo = F, fig.cap = 'Plant Fatty Acid Biosynthesis', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/plant_fa_biosynthesis.png')
-```
-
-The process of fatty acid biosynthesis in plants is a part of a broader field of biochemistry, and it shares some common features with other organisms.
-
-One fascinating thing is that the biochemistry of fatty acid biosynthesis is quite similar across different life forms. In animals and fungi, for instance, this process takes place in the cytoplasm, which is a part of the cell, and it's orchestrated by a giant enzyme called fatty acid synthase. This mega-enzyme handles all the different enzymatic activities required for fatty acid production.
-
-But what's even more interesting is how variations of this fatty acid biosynthesis pathway are used by bacteria and fungi to create various compounds called polyketides. These polyketides are a diverse group of molecules, and some of them are famous for being antibiotics. This means that the same pathway plants use to make fatty acids can be adapted to produce a wide range of other useful compounds in different organisms.
-
-### Importance of Fatty Acid Desaturation
-
-Fatty acid desaturation, or the process of adding double bonds to fatty acid chains, plays a crucial role in maintaining the right properties for various functions in plants.
-
-When cis double bonds are introduced into the fatty acid chains, they create "kinks" or bends in the chains. These kinks are like little twists in the fatty acid structure, and they have a significant impact. They reduce the tight packing of the chains, making the membranes more fluid. This increased fluidity is essential for the proper functioning of cell membranes.
-
-For example, consider stearic acid, a fatty acid with no double bonds (18:0). It has a melting point at 69 degrees Celsius. In contrast, oleic acid, which has one double bond (18:1Δ9), has a much lower melting point at 13.4 degrees Celsius. This difference in melting points is because of the kinks created by the double bond, which makes the oleic acid more fluid at lower temperatures.
-
-In most plant tissues, more than 75% of the fatty acids are unsaturated, meaning they have these kinks due to double bonds. To achieve this, many of the 18:0 fatty acids, which are saturated (no double bonds), are converted into 18:1Δ9. This conversion is carried out by an enzyme called **soluble stearoyl-ACP desaturase**.
-
-#### Arabidopsis Fab2 Mutant
-
-```{r echo = F, fig.cap = 'Arabidopsis Fab2 Mutant', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/plant_mutant.png')
-```
-
-
-This mutant has a problem with its stearoyl-ACP Δ9 desaturase, an enzyme responsible for adding double bonds to fatty acids. As a result, the fab2 mutant has higher levels of 18:0 fatty acids, which are saturated and lack double bonds.
-
-The most interesting thing about this mutant is its appearance. It has a miniature phenotype, which means it doesn't grow as big as regular plants. Specifically, the mesophyll and epidermal cells in this mutant fail to enlarge, which affects its overall size and shape.
-
-However, there's a twist to this story. When these mutant plants are grown at a higher temperature, around 35 degrees Celsius, some of the issues with their size can be partially overcome. This happens because the increase in temperature makes the cell membrane more fluid, which helps the cells function better. It's like how some things work smoother when it's warmer.
-
-### More on Desaturases
-
-```{r echo = F, fig.cap = 'Effects of Desaturase on Plant Phenotype', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/saturase.png')
-```
-
-When it comes to fatty acid desaturases, there's something interesting to note. Most of these enzymes are found in the cell's membranes, and they typically work on glycerolipids, which are molecules found in the plastid.
-
-To create glycerolipids in the plastid, a fatty acid is moved from acyl-ACP to glycerol-3-phosphate. This process is like assembling the building blocks for these lipids.
-
-In plants, like Arabidopsis, there are seven more desaturases known as **FAD2-FAD8**. These enzymes are located in the membranes of the chloroplasts or the endoplasmic reticulum (ER), another part of the cell. What makes them special is that they add additional double bonds to the fatty acids. These extra double bonds have a big impact on the physical properties of the membranes they create.
-
-Studying these enzymes biochemically can be quite challenging, but scientists have managed to create genetic mutants for all of them. Interestingly, when you disrupt the function of these enzymes, the plant becomes unable to grow through photosynthesis. Instead, it relies on external sources of energy like sucrose to survive. This highlights the critical role of polyunsaturated membranes, which these enzymes help create, in the photosynthesis process. So, these desaturases play a vital role in the plant's ability to capture and use light energy.
-
-## Storage Lipids
-
-```{r echo = F, fig.cap = 'Examples of Storage Lipids', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/storage_lipids.png')
-```
-
-When plants create storage lipids in their seeds and pollen, the process is quite fascinating.
-
-First, the fatty acids they produce in the plastid are transported out of the plastid to the endoplasmic reticulum (ER), another part of the cell. Once there, these fatty acids become part of a dynamic pool. This means they can move around and undergo various acyl exchange and transferase reactions, essentially shuffling themselves around.
-
-Finally, these fatty acids are gathered and packed into subcellular organelles known as oil bodies. It's like the plant's way of storing these valuable molecules in a secure and organized manner. These oil bodies are the plant's storage vaults for energy-rich triglycerides (TAGs), where they're saved until they're needed, such as for seed germination or pollen growth. So, it's a well-coordinated process, from fatty acid creation in the plastid to storage in **oil bodies**.
-
-### Oil Bodies
-
-**Oil bodies**, which are like storage compartments for fats in plant cells, are structured in an interesting way.
-
-```{r echo = F, fig.cap = 'Picture of an Oil Body', fig.align = 'center'}
-knitr::include_graphics('../imgs/week7/oil_body.png')
-```
-
-These oil bodies are enclosed by a single-layer membrane. This membrane is special because it's made up of phospholipids, and it has a unique orientation. The hydrophilic (water-attracting) head groups of these phospholipids face the cytosol, which is the watery interior of the cell. Meanwhile, the acyl moieties, which are the hydrophobic (water-repelling) parts, interact with the hydrophobic TAG (triglyceride) cargo, which is essentially the stored fat.
-
-In addition to the membrane, there's a small protein called **Oleosin** that plays a key role. Oleosin is embedded within this monolayer membrane. It has a hydrophobic middle domain, which is like the part of the protein that prefers the fatty TAGs. This middle domain interacts with the stored fats in the oil bodies, helping to regulate the size of these storage compartments. So, the unique structure and the presence of Oleosin make these oil bodies an efficient and well-organized storage system for fats in plant cells.
+3. **Shelterin-Mediated Sequestration:** Shelterin proteins help maintain the structural integrity of telomeres and promote the formation of higher-order nucleoprotein structures, such as the T-loop. These structures sequester the chromosome end and prevent it from being recognized as a DNA break, thereby minimizing the likelihood of NHEJ-mediated repair.
