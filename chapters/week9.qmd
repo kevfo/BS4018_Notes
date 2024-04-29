@@ -1,417 +1,508 @@
-# Plant Genome
+# Alzheimer's Disease
 
-```{r echo = F, fig.cap = 'Illustration of Genomic Levels', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/genomic_levels.png')
+**Alzheimer's disease (AD)** is a prevalent neurodegenerative disorder characterized by progressive cognitive decline and memory loss. Here are some key points about the prevalence, duration, and onset of Alzheimer's disease:
+
+1. **Prevalence:** Alzheimer's disease is estimated to affect 10-30% of individuals aged 65 and older, making it a common condition among older adults. The prevalence increases with age, and it is one of the leading causes of dementia worldwide.
+
+2. **Clinical Duration:** Alzheimer's disease is a chronic illness with an average clinical duration of 8-10 years. However, the progression and severity of symptoms can vary widely among individuals.
+
+3. **Late-Onset vs. Early-Onset:** The majority of Alzheimer's cases (>95%) belong to the late-onset form, which typically occurs in individuals aged 65 and older. However, approximately 5% of cases are classified as early-onset Alzheimer's disease, affecting individuals younger than 65. The exact cause of most early-onset cases is unknown, although they are primarily sporadic, meaning they occur without a clear familial inheritance pattern.
+
+4. **Genetic Mutations:** A small proportion of individuals (<1%) have inherited genetic mutations that significantly increase their risk of developing Alzheimer's disease at a much younger age, typically around 45 years old. These cases, known as familial or early-onset familial Alzheimer's disease (EOFAD), are characterized by a strong familial inheritance pattern and are caused by mutations in specific genes such as the amyloid precursor protein (APP), presenilin 1 (PSEN1), and presenilin 2 (PSEN2).
+
+```{r echo = F, fig.cap = 'Comparison of a Healthy and Diseased Brain', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/ad_brain.png')
 ```
 
-The plant genome is like a library of instructions that tells a plant how to grow, survive, and do all the things it needs to do. But not all plant genomes are the same. They can be big or small, and the size can vary a lot from one plant to another. This is like having different-sized books in the library. 
+In AD, hippocampal and cortical atrophy are prominent structural changes that occur in the brain and are associated with cognitive decline and memory loss. Here's how these changes manifest:
 
-What's interesting is that a plant doesn't just have one set of instructions; it has three! It's like having three different books in the library. These books are the **nuclear genome**, the **chloroplast genome**, and the **mitochondrial genome**. They all contain different sets of instructions, but they need to work together for the plant to function properly.
+1. **Hippocampal Atrophy:**
+   The hippocampus is a region of the brain involved in the formation and consolidation of new memories. In Alzheimer's disease, the hippocampus is one of the earliest and most severely affected brain regions. Hippocampal atrophy refers to the shrinkage or loss of neurons and tissue in the hippocampus.
 
-In the plant genome, there are lots of repeated and noncoding sequences. These are like paragraphs and pages in the books that don't contain the main instructions but are still important. They play a role in how the plant responds to changes in its environment. Imagine reading a book, and when you see certain words or pictures, you know it's time to do something specific. That's how these sequences work.
+2. **Cortical Atrophy:**
+   Cortical atrophy refers to the loss of neurons and tissue in the cerebral cortex, the outer layer of the brain responsible for higher cognitive functions such as reasoning, language, and perception. In Alzheimer's disease, cortical atrophy typically affects multiple regions of the cortex, including the temporal, parietal, and frontal lobes.
 
-Plants are pretty smart because many of their genes, which are like sentences in the books, can change how they work based on what's happening around them. If the environment changes, the plant can switch some genes on or off to adapt. It's like having a special set of instructions for different situations.
+3. **Neuroimaging Findings:**
+   Neuroimaging techniques such as magnetic resonance imaging (MRI) and positron emission tomography (PET) can visualize and quantify hippocampal and cortical atrophy in individuals with Alzheimer's disease. These imaging modalities allow clinicians to assess the extent of brain atrophy, track disease progression, and monitor treatment response over time.
 
-Even when we look at different plant species that are related, we can see that they have some parts of their genome that are similar. It's like finding similar chapters in different books. This tells us that some parts of the plant genome have stayed the same throughout plant evolution, just like some stories are classics that people still enjoy reading.
+## Structure of the Brain
 
-## Single Copy Sequences and Repetitive Sequences
+The structure of the human brain is complex and highly organized, consisting of various regions and interconnected networks that govern cognitive, emotional, sensory, and motor functions. Here's an overview of the key structures and their functions:
 
-```{r echo = F, fig.cap = 'Conserved, Arranged Orthologs Across Genes', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/synteny_plants.png')
+1. **Cerebrum:**
+   - The largest and most prominent part of the brain.
+   - Divided into two hemispheres (left and right) and further subdivided into four lobes: frontal, parietal, temporal, and occipital.
+   - Responsible for higher cognitive functions such as reasoning, problem-solving, language, and voluntary movement.
+   - Contains the cerebral cortex, the outer layer of gray matter where most information processing occurs.
+
+2. **Cerebellum:**
+   - Located below the cerebrum at the back of the brain.
+   - Plays a crucial role in coordinating voluntary movements, maintaining balance, and posture.
+   - Involved in motor learning and skill acquisition.
+
+3. **Brainstem:**
+   - Connects the brain to the spinal cord and serves as a relay center for sensory and motor pathways.
+   - Comprises the midbrain, pons, and medulla oblongata.
+   - Regulates essential functions such as heart rate, breathing, sleep-wake cycles, and basic arousal.
+
+4. **Thalamus:**
+   - Located deep within the brain, above the brainstem.
+   - Acts as a relay station for sensory information, transmitting signals from sensory organs to the cerebral cortex.
+   - Plays a role in regulating consciousness, attention, and sleep.
+
+5. **Hypothalamus:**
+   - Lies below the thalamus and above the pituitary gland.
+   - Regulates various physiological processes such as body temperature, hunger, thirst, and circadian rhythms.
+   - Controls the release of hormones from the pituitary gland.
+
+6. **Hippocampus:**
+   - Located within the temporal lobes, deep within the cerebrum.
+   - Plays a crucial role in memory formation and spatial navigation.
+   - Particularly involved in the consolidation of short-term memories into long-term memories.
+
+7. **Amygdala:**
+   - Situated in the temporal lobes, adjacent to the hippocampus.
+   - Involved in the processing of emotions, particularly fear and aggression.
+   - Plays a role in emotional memory and social behavior.
+
+8. **Basal Ganglia:**
+   - Collection of nuclei located deep within the cerebral hemispheres.
+   - Involved in motor control, voluntary movement, and procedural learning.
+   - Dysfunction of the basal ganglia can lead to movement disorders such as Parkinson's disease and Huntington's disease.
+
+### Hallmarks of AD
+
+AD is characterized by several hallmark features that contribute to its progressive neurodegenerative nature. These hallmarks include:
+
+1. **Amyloid Beta (Aβ) Plaques:**
+   - Accumulation of extracellular deposits of amyloid beta protein.
+   - Aβ peptides are derived from the cleavage of amyloid precursor protein (APP).
+   - Aggregation of Aβ peptides forms insoluble plaques, which are a hallmark pathological feature of AD.
+   - Disruption of synaptic function and neuronal toxicity are associated with Aβ plaques.
+
+2. **Neurofibrillary Tangles (NFTs):**
+   - Intracellular aggregates of hyperphosphorylated tau protein.
+   - Tau protein normally stabilizes microtubules within neurons.
+   - Hyperphosphorylation of tau leads to its misfolding and aggregation into insoluble filaments.
+   - NFTs disrupt neuronal structure and function, leading to cell death and neurodegeneration.
+
+3. **Neuronal Loss and Atrophy:**
+   - Progressive loss of neurons, particularly in brain regions associated with memory and cognitive function, such as the hippocampus and cortex.
+   - Atrophy (shrinkage) of affected brain regions due to neuronal loss and synaptic dysfunction.
+   - Neuronal loss contributes to cognitive decline and dementia in AD patients.
+
+4. **Inflammation and Neuroinflammation:**
+   - Activation of immune cells, including microglia and astrocytes, in response to Aβ plaques and NFTs.
+   - Release of pro-inflammatory cytokines and chemokines, leading to chronic neuroinflammation.
+   - Neuroinflammation exacerbates neuronal damage and contributes to disease progression.
+
+5. **Synaptic Dysfunction:**
+   - Impairment of synaptic transmission and plasticity.
+   - Disruption of neurotransmitter systems, including acetylcholine, glutamate, and gamma-aminobutyric acid (GABA).
+   - Loss of synapses precedes neuronal loss and correlates with cognitive decline in AD.
+
+6. **Vascular Changes:**
+   - Accumulation of vascular amyloid deposits in cerebral blood vessels (cerebral amyloid angiopathy).
+   - Vascular dysfunction, including impaired cerebral blood flow and blood-brain barrier integrity.
+   - Vascular pathology contributes to cognitive impairment and increases the risk of hemorrhagic stroke in AD patients.
+
+### Amyloid Cascade Hypothesis
+
+```{r echo = F, fig.cap = 'Illustration of the Amyloid Hypothesis', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/amyloid_hypothesis.png')
 ```
 
-In the plant genome, we have something called "**single copy sequences**." These sequences are like unique pages in the library books, meaning they don't repeat themselves much. Surprisingly, many of these single copy sequences don't give instructions to the plant. To put it in perspective, if you think about the entire genome of a tobacco plant, around 40% of it consists of single copy DNA, but only a tiny 2% is used for making mRNA, which is like the plant's way of reading those instructions.
+The **amyloid cascade hypothesis** proposes that the accumulation of amyloid beta (Aβ) protein is the primary trigger for the development of Alzheimer's disease pathology. According to this hypothesis, the deposition of Aβ in the brain leads to a cascade of events that ultimately result in neurofibrillary tangles, neuronal cell loss, vascular damage, and dementia characteristic of Alzheimer's disease.
 
-Now, when it comes to repetitive sequences, it's a bit like having chapters or pages that keep showing up throughout the books but aren't exactly the same. These repetitive sequences can be divided into two groups: **tandem repeats** and **dispersed repeats**. The "tandem repeats" are like chapters with a common theme that you find in the same place over and over in the book. On the other hand, "dispersed repeats" are more like chapters with similar themes that pop up randomly throughout the book. 
+Key points of the amyloid cascade hypothesis include:
 
-Here's the thing – these repetitive sequences can be useful instructions for the plant, but not always. Some of them might be codes for certain plant functions, while others might be repetitive but not have a specific purpose. It's kind of like having a book where some repeated sections are important and others are just there to fill space.
+1. **Aβ Deposition:** The hypothesis posits that the initial step in Alzheimer's disease pathogenesis is the abnormal accumulation of Aβ peptides, which aggregate to form insoluble plaques in the brain.
 
-### Tandem Repeats
+2. **Neurofibrillary Tangles:** The presence of Aβ plaques is believed to trigger the hyperphosphorylation and aggregation of tau protein, leading to the formation of neurofibrillary tangles within neurons. These tangles disrupt neuronal structure and function, contributing to neurodegeneration.
 
-```{r echo = F, fig.cap = 'Illustration of a Tandem Repeat', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/tandem_repeats.png')
+3. **Neuronal Cell Loss:** As the disease progresses, widespread neuronal cell loss occurs, particularly in brain regions crucial for memory and cognitive function, such as the hippocampus and cortex. This neuronal loss correlates with the severity of cognitive impairment in Alzheimer's patients.
+
+4. **Vascular Damage:** Aβ deposition is also associated with vascular changes, including the accumulation of amyloid in cerebral blood vessels (cerebral amyloid angiopathy) and impaired cerebral blood flow. Vascular dysfunction contributes to cognitive decline and increases the risk of stroke in Alzheimer's disease.
+
+5. **Dementia:** Ultimately, the cumulative effects of Aβ deposition, neurofibrillary tangles, neuronal loss, and vascular damage lead to the clinical manifestation of dementia, characterized by progressive cognitive decline, memory loss, and impaired daily functioning.
+
+### Amyloid Precursor Protein (i.e., APP)
+
+**Amyloid precursor protein (APP)** is a transmembrane protein that is abundantly produced in neurons, although its precise function in the brain is not fully understood. Interestingly, studies in mice lacking APP have shown minimal observable effects, suggesting that APP may not be essential for basic neuronal function.
+
+However, APP is known to undergo proteolytic processing through multiple alternative pathways, some of which result in the generation of amyloid beta (Aβ) peptides, while others do not. Aβ peptides are central to the amyloid cascade hypothesis of Alzheimer's disease, as their accumulation is believed to contribute to the pathogenesis of the disease.
+
+The metabolism of APP involves several proteolytic enzymes, including α-secretase, β-secretase, and γ-secretase. Cleavage of APP by α-secretase within the Aβ region results in the generation of soluble APP fragments that have neuroprotective properties. However, cleavage by β-secretase followed by γ-secretase leads to the production of Aβ peptides, particularly Aβ42, which are prone to aggregation and form insoluble plaques in the brain, a hallmark of Alzheimer's disease.
+
+While the exact physiological function of APP remains elusive, its involvement in Aβ production and the pathogenesis of Alzheimer's disease has garnered significant attention in research aimed at understanding and treating the disease. Further investigation into the molecular pathways and regulatory mechanisms governing APP metabolism may provide insights into its role in normal brain function and neurodegenerative disorders.
+
+#### Transmembrane Protein Biosynthesis
+
+```{r echo = F, fig.cap = 'Illustration of Transmembrane Protein Biosynthesis', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/transmembrane_protein_biosynthesis.png')
 ```
 
-There are some genes that follow a repetitive pattern in plants – it's like having chapters in a book that talk about the same topic over and over. But here's the interesting part: these repetitive genes are usually responsible for making stuff that the plant needs a lot. It's a bit like having a cookbook with many recipes for a favorite dish because you want to make it over and over.
+**Transmembrane protein biogenesis** refers to the process by which transmembrane proteins, which span the lipid bilayer of cellular membranes, are synthesized, folded, and inserted into their appropriate cellular membranes. This process is essential for the proper functioning of cells, as transmembrane proteins play crucial roles in various cellular processes, including cell signaling, transport of molecules across membranes, and cell-cell communication.
 
-These repetitive genes often make things like ribosomal RNAs (the plant's protein-making machinery), seed storage proteins (to store food for later), Rubisco (a key player in photosynthesis), the light-harvesting complex (for catching sunlight), and histones (proteins that help DNA stay neat and organized). Just think of them as the most important recipes in the cookbook.
+The biogenesis of transmembrane proteins involves several steps:
 
-Now, these genes aren't just randomly scattered. They hang out in clusters or tandem repeats – sort of like a cookbook with all the recipes for your favorite dish placed together. Each gene in these clusters has its own little switch to turn it on or off, which is pretty cool. It's like having individual recipes in the cookbook that you can choose to cook or skip.
+1. **Protein Synthesis:** Transmembrane proteins are synthesized on ribosomes in the cytosol as precursor proteins. These precursor proteins typically contain an N-terminal signal sequence that directs them to the endoplasmic reticulum (ER), where transmembrane protein biogenesis primarily occurs.
 
-#### Non-Coding Tandem Repeats
+2. **Targeting to the Endoplasmic Reticulum (ER):** The N-terminal signal sequence of the precursor protein interacts with the signal recognition particle (SRP), which targets the ribosome-nascent chain complex to the ER membrane. The ribosome then docks onto the ER membrane, and protein synthesis continues into the ER lumen.
 
-```{r echo = F, fig.cap = 'Non-Coding Tandem Repeats', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/noncoding_tandems.png')
+3. **Translocation into the ER Lumen:** As the nascent polypeptide chain is synthesized, it is translocated across the ER membrane through a proteinaceous channel called the translocon. The signal sequence is typically cleaved by signal peptidase as the protein is translocated into the ER lumen.
+
+4. **Protein Folding and Quality Control:** Once in the ER lumen, transmembrane proteins undergo folding and assembly into their native three-dimensional structures. Chaperone proteins assist in the folding process, while quality control mechanisms monitor protein folding and ensure that misfolded proteins are targeted for degradation by the ER-associated degradation (ERAD) pathway.
+
+5. **Insertion into the Membrane:** Integral transmembrane proteins contain hydrophobic regions (transmembrane domains) that span the lipid bilayer of the ER membrane. These hydrophobic regions facilitate the insertion of the protein into the membrane, where they adopt their final topology.
+
+6. **Post-Translational Modifications:** Transmembrane proteins may undergo various post-translational modifications in the ER, including glycosylation, disulfide bond formation, and proteolytic cleavage, which can further modulate their structure and function.
+
+7. **Transport to Destination Organelles:** Once synthesized and properly folded in the ER, transmembrane proteins may be transported to their final destination organelles, such as the Golgi apparatus, plasma membrane, or other cellular compartments, via vesicular transport pathways.
+
+### Presinilin and $\gamma$-secretase
+
+```{r echo = F, fig.cap = 'Gamma Secretase in Action', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/gamma_secretase.png')
 ```
 
-In plants, there's something called "**satellite DNA**," which is like a special type of repetitive DNA that doesn't code for any specific genes. It's a bit like having a section in a book that's filled with random letters – it doesn't tell a story, but it's there.
+**Gamma-secretase** is a multisubunit enzyme complex responsible for the cleavage of transmembrane proteins within the lipid bilayer, including amyloid precursor protein (APP) and Notch receptors. The catalytic core of gamma-secretase is composed of **presenilin**, which exists in two isoforms: presenilin 1 (PSEN1) and presenilin 2 (PSEN2). Both isoforms are integral membrane proteins that contain multiple transmembrane domains and are essential components of the gamma-secretase complex.
 
-Now, some of these repetitive sequences hang out in the **centromere**, which is a part of the chromosome. The centromere sequences can be quite different from plant to plant. It's like having a secret code unique to each plant.
+Key points about gamma-secretase and its association with presenilin 1 or presenilin 2 include:
 
-On the other hand, there are repetitive sequences in the telomere, which is another part of the chromosome. These sequences are actually pretty similar among different living things, like plants and animals. They help to keep the chromosomes the right size, and they work together with something called telomerase, which is like the chromosome's length keeper.
+1. **Cleavage of Substrates:** Gamma-secretase mediates the proteolytic cleavage of a variety of transmembrane proteins, including APP and Notch receptors, which are involved in critical cellular processes such as neuronal signaling and development. The cleavage of these substrates by gamma-secretase generates intracellular signaling fragments and extracellular protein fragments, such as amyloid beta (Aβ) peptides derived from APP.
 
-### Transposable Elements (i.e., TEs)
+2. **Presenilin as the Catalytic Component:** Presenilin serves as the catalytic subunit of the gamma-secretase complex, responsible for the enzymatic activity that cleaves substrates within their transmembrane domains. Presenilin contains essential aspartate residues within its transmembrane domains, which are involved in the proteolytic cleavage reaction.
 
-```{r echo = F, fig.cap = 'Illustration of Transposable Elements', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/transposable_elements.png')
+3. **Association with Alzheimer's Disease:** Mutations in the genes encoding presenilin 1 (PSEN1) and presenilin 2 (PSEN2) are associated with familial forms of Alzheimer's disease (FAD), a rare, early-onset form of the disease. These mutations lead to alterations in gamma-secretase activity, resulting in an imbalance in the production of Aβ peptides and an increased accumulation of neurotoxic Aβ42 peptides, which are believed to contribute to the pathogenesis of Alzheimer's disease.
+
+4. **Therapeutic Target:** Due to its central role in the generation of Aβ peptides, gamma-secretase has been considered a promising target for therapeutic intervention in Alzheimer's disease. However, targeting gamma-secretase poses challenges due to its involvement in the processing of multiple substrates, including Notch receptors, which play critical roles in cellular signaling and development. Selective inhibition of Aβ production while preserving Notch signaling presents a significant hurdle in the development of gamma-secretase inhibitors as Alzheimer's disease therapies.
+
+### Generating A$\beta$ Peptides
+
+```{r echo = F, fig.cap = 'APP Processing and A$\beta$ Peptides', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/abeta.png')
 ```
 
-Imagine the genome of a plant is like a big puzzle made of different pieces. Some of these pieces are called "**transposable elements**." They're like tiny jumping parts that can copy and paste themselves into the genome.
+The processing of amyloid precursor protein (APP) by proteolytic enzymes results in the generation of amyloid beta (Aβ) peptides, which play a central role in the pathogenesis of Alzheimer's disease. Here's an overview of how APP processing leads to the production of Aβ peptides:
 
-These transposable elements can make up a huge part of the plant's genome, sometimes as much as 90%. They're like the puzzle pieces that are scattered everywhere, making the puzzle much bigger. These elements are often of the "**retrotransposon**" variety, which means they use a special trick to copy themselves and spread around even more.
+1. **Synthesis of APP:**
+   - Amyloid precursor protein (APP) is a type I transmembrane protein synthesized in neurons and other cells.
+   - It is produced in the endoplasmic reticulum (ER) and transported to the Golgi apparatus for further processing and trafficking to the cell surface.
 
-#### Transposable Elements in Maize
+2. **Proteolytic Processing of APP:**
+   - APP undergoes proteolytic cleavage by two major pathways: the amyloidogenic pathway and the non-amyloidogenic pathway.
 
-```{r echo = F, fig.cap = 'Illustration of Transposable Elements in Maize', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/corn_elements.png')
+3. **Amyloidogenic Pathway:**
+   - In the amyloidogenic pathway, APP is sequentially cleaved by β-secretase (beta-site amyloid precursor protein cleaving enzyme, BACE1) and γ-secretase.
+   - β-secretase cleaves APP at the N-terminus of the Aβ domain, releasing a soluble fragment called soluble APPβ (sAPPβ) and a membrane-bound C-terminal fragment (CTFβ or C99).
+   - CTFβ/C99 fragment is then cleaved by γ-secretase within the transmembrane domain, resulting in the release of Aβ peptides of various lengths, including Aβ40 and Aβ42.
+   - Aβ42 is particularly prone to aggregation and is implicated in the formation of amyloid plaques in the brain, a hallmark pathological feature of Alzheimer's disease.
+
+4. **Non-amyloidogenic Pathway:**
+   - In the non-amyloidogenic pathway, APP is cleaved by α-secretase within the Aβ domain, precluding the generation of Aβ peptides.
+   - α-secretase cleavage results in the release of a soluble fragment called soluble APPα (sAPPα) and a membrane-bound C-terminal fragment (CTFα or C83).
+   - CTFα/C83 fragment can be further processed by γ-secretase to produce p3 peptides, which are shorter and less prone to aggregation compared to Aβ peptides.
+
+5. **Functional Roles of Aβ Peptides:**
+   - The physiological functions of Aβ peptides are not fully understood, but they may play roles in synaptic function, neuronal plasticity, and regulation of neurotransmitter release.
+   - However, the accumulation and aggregation of Aβ peptides, particularly Aβ42, in the brain are believed to contribute to the neurodegenerative processes underlying Alzheimer's disease, leading to synaptic dysfunction, neuronal loss, and cognitive decline.
+
+## Neurons
+
+```{r echo = F, fig.cap = 'Illustration of a Neuron', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/neuron.png')
 ```
 
-Imagine you have a special kind of plant, like maize (corn), and inside its DNA, there are these little elements called **Transposable Elements (TE)**. They're like tiny DNA movers.
+**Neurons**, the fundamental units of the nervous system, possess a unique structure specialized for the transmission of electrical and chemical signals. Here's an overview of the structure of a typical neuron and the role of glial cells:
 
-Among these elements, there are two important ones: "Ac" and "Ds." Ac is the leader, and Ds is the follower. **Ac** is the one that can move around on its own, kind of like a leader, while **Ds** needs Ac to move. So, Ds is like a follower that can only move when Ac is around.
+1. **Neuron Structure:**
+   - **Cell Body (Soma):** The main part of the neuron containing the nucleus and organelles responsible for cellular metabolism and protein synthesis.
+   - **Dendrites:** Branch-like extensions protruding from the cell body that receive incoming signals (neurotransmitters) from other neurons or sensory receptors.
+   - **Axon:** A long, slender projection extending from the cell body that transmits electrical impulses (action potentials) away from the cell body toward other neurons, muscles, or glands.
+   - **Axon Terminals (Axon Endings):** Specialized structures at the end of the axon that release neurotransmitters to communicate with other neurons or target cells.
+   - **Myelin Sheath:** A fatty, insulating layer surrounding the axon formed by glial cells (oligodendrocytes in the central nervous system and Schwann cells in the peripheral nervous system). The myelin sheath enhances the speed and efficiency of electrical signal conduction along the axon.
 
-When these elements move, they leave behind a mark called a "footprint." It's like a little trail they leave in the DNA.
+2. **Glia (Glial Cells):**
+   - **Oligodendrocytes:** Glial cells in the central nervous system (CNS) that produce myelin sheaths, which wrap around axons to insulate and support them.
+   - **Astrocytes:** Star-shaped glial cells that provide structural support to neurons, regulate the extracellular environment by maintaining ion balance and neurotransmitter levels, and contribute to the blood-brain barrier.
+   - **Microglia:** Small, specialized immune cells in the CNS that act as the primary immune defense and perform functions such as phagocytosis (removal of cellular debris and pathogens) and immune response regulation.
 
-Interestingly, similar systems with Ac and Ds-like elements are found in other plants, like snapdragons, where they have their own versions of these DNA movers.
+### APP Trafficking in Neurons
 
-#### Classes of Transposable Elements in Plants
-
-```{r echo = F, fig.cap = 'Classes of Transposable Elements in Plants', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/classes.png')
+```{r echo = F, fig.cap = 'APP Trafficking in Neurons', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/app_trafficking.png')
 ```
 
-Plants have special elements inside their DNA called "**transposable elements**." There are two classes of these elements: Class II and Class I.
+The trafficking of amyloid precursor protein (APP) in neurons involves a complex series of cellular processes that regulate the localization, processing, and function of APP within the cell. Here's an overview of APP trafficking in neurons:
 
-**Class II transposons** are like DNA cutters and pasters. They can cut themselves out from one place in the DNA and paste themselves into another. It's kind of like cutting a picture from one page and sticking it onto another.
+1. **Synthesis and Localization:**
+   - APP is synthesized in the endoplasmic reticulum (ER) and transported through the secretory pathway to the Golgi apparatus, where it undergoes post-translational modifications.
+   - From the Golgi apparatus, APP is transported in vesicles to various cellular compartments, including the plasma membrane and endosomes.
 
-**Class I transposons**, on the other hand, are more like DNA copiers and pasters. They make copies of themselves and then paste those copies into different parts of the DNA. It's similar to making photocopies of a picture and placing them in different folders.
+2. **Plasma Membrane Localization:**
+   - A fraction of newly synthesized APP is transported to the plasma membrane, where it functions in cell adhesion, neurite outgrowth, and synaptic transmission.
+   - At the plasma membrane, APP may interact with other cell surface receptors and undergo proteolytic processing by secretases, leading to the production of amyloid beta (Aβ) peptides.
 
-#### Functions of Transposable Elements in Plants
+3. **Endocytic Trafficking:**
+   - APP is internalized from the plasma membrane via endocytosis, leading to its trafficking through endosomal compartments.
+   - Endosomes serve as sorting platforms where APP can be sorted for recycling back to the plasma membrane, targeted for degradation in lysosomes, or transported to other cellular compartments.
 
-Transposable elements (TEs) found in plants have some pretty fascinating functions that are often referred to as "drivers of evolution." They were once thought of as "**selfish DNA parasites**," but we've come to learn that they play essential roles in shaping a plant's genetic makeup. When TEs move around in the DNA, they can sometimes disrupt or alter functional genes. This can lead to changes in the plant's characteristics, even after the TE has relocated. In other words, TEs can create genetic mutations that stick around.
+4. **Intracellular Trafficking:**
+   - Within neurons, APP-containing vesicles can undergo retrograde transport along microtubules toward the cell body or anterograde transport toward axonal or dendritic compartments.
+   - Motor proteins, such as kinesins and dyneins, mediate the movement of APP-containing vesicles along microtubules.
 
-TEs don't just shuffle genes; they can also act as sneaky promoters. Sometimes, the promoters within TEs can cause nearby genes to be expressed in unusual ways, which can result in mutant traits in the plant. It's like TEs are the mischievous conductors of a genetic orchestra, making genes play their music in unique and unexpected styles.
+5. **Axonal Transport:**
+   - APP is transported along axons to reach distal synaptic terminals, where it plays roles in synaptic function and plasticity.
+   - The axonal trafficking of APP is crucial for the production and release of Aβ peptides at synapses.
 
-Another role of TEs is epigenetic regulation, mainly through a process called **methylation**. It's like putting temporary sticky notes on certain parts of a book to mark important sections. TEs can add these "sticky notes" to genes, which can either increase or decrease their activity. Sometimes, TEs can even influence the behavior of genes located far away from them, sort of like a butterfly flapping its wings and causing changes in distant weather patterns.
+6. **Regulation of Trafficking:**
+   - Various cellular factors and signaling pathways regulate the trafficking of APP in neurons, including protein kinases, phosphatases, and cytoskeletal elements.
+   - Dysregulation of APP trafficking can lead to aberrant processing and accumulation of Aβ peptides, contributing to the pathogenesis of Alzheimer's disease.
 
-One of the most exciting things about TEs is that they can help develop new gene variants. It's like mixing and matching different puzzle pieces to create new and exciting pictures. The movement and activity of TEs in a plant's DNA can lead to the creation of entirely new versions of genes.
+### Structure of A$\beta$42
 
-Many TEs are silenced or kept quiet by methylation. However, this silencing isn't permanent, and it can be reversed, especially when the plant is under stress. Think of it as pressing the mute button on a TV remote, but you can unmute it when you want to hear the sound again. In this way, TEs have a dynamic role in shaping a plant's genetic evolution.
-
-## Genomes in Plants
-
-```{r echo = F, fig.cap = 'Illustration of the Endosumbiont Hypothesis', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/endosymbiont_hypothesis.png')
+```{r echo = F, fig.cap = 'Structure of A$\beta$42', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/abeta42.png')
 ```
 
-Plants are like treasure chests of genetic material because they house not one, not two, but three different sets of genomes within their cells. This genetic trio includes the nuclear genome, the chloroplast genome, and the mitochondrial genome. It's like having three different instruction manuals for building and maintaining the plant!
+The fibril structure of amyloid beta 42 (Aβ42) is characterized by its ability to form insoluble aggregates known as amyloid fibrils, which are a hallmark pathological feature of Alzheimer's disease. Here's an overview of the fibril structure of Aβ42:
 
-Scientists believe that the origins of these genetic powerhouses are connected to a fascinating idea called the **endosymbiont hypothesis**. Imagine this: a long, long time ago, tiny prokaryotic cells (the ancestors of modern bacteria) were gobbled up by other prokaryotic cells. Instead of becoming a tasty snack, these little prokaryotic travelers set up shop inside their new hosts. Over time, these cell-squatters evolved into the chloroplasts and mitochondria we see in plant cells today. It's almost like these tiny squatters turned into helpful housemates.
+1. **Peptide Sequence:** Aβ42 is a peptide consisting of 42 amino acid residues, derived from the proteolytic cleavage of amyloid precursor protein (APP). It is characterized by its hydrophobicity and propensity to aggregate.
 
-There's evidence that supports this idea. When scientists compare the genetic code found in ribosomal RNAs, they see similarities between the genes in chloroplasts and mitochondria and those in modern-day cyanobacteria and proteobacteria. It's like finding ancient family photos that show how everyone is connected. These similarities suggest that the chloroplast and mitochondria indeed have their roots in these ancient prokaryotes.
+2. **Beta-Sheet Conformation:** Aβ42 peptides undergo a conformational change from random coil to beta-sheet structure during fibril formation. Beta-sheet structures are characterized by the alignment of peptide strands in a parallel or antiparallel fashion, forming a cross-beta structure.
 
-Symbiotic relationships, where different organisms team up to help each other out, aren't unique to plants and their internal roommates. There are examples all around us, like marine nudibranchs, which are sea slugs that munch on algae. The algae help the nudibranchs by providing food and the nudibranchs give the algae a place to live. It's like a tiny underwater apartment-sharing arrangement! So, just as plants share their homes with these mini prokaryotic guests, many other living things have their own symbiotic stories to tell.
+3. **Cross-Beta Architecture:** The assembly of Aβ42 peptides into amyloid fibrils results in the formation of a cross-beta architecture, where individual peptide strands run perpendicular to the long axis of the fibril. This arrangement creates a characteristic pattern of beta-strands stacked along the fibril axis, with intermolecular hydrogen bonding between adjacent peptide strands.
 
-### Chloroplast Genome
+4. **Protofilament Formation:** Aβ42 peptides assemble into protofilaments, which are linear aggregates of peptides arranged in a parallel fashion. Protofilaments can further associate laterally to form mature amyloid fibrils, which can vary in length and thickness.
 
-```{r echo = F, fig.cap = 'Illustration of Chloroplast Genomes', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/chloroplast_genome.png')
+5. **Twisted Ribbon Structure:** Mature Aβ42 fibrils often exhibit a twisted ribbon morphology, where individual protofilaments twist around the fibril axis, giving rise to a helical or helical-like structure. This twisted ribbon architecture is a common feature observed in many amyloid fibrils.
+
+6. **Amyloid Core:** Within the fibril structure, the amyloid core consists of densely packed regions of beta-sheet structure formed by the aggregation of Aβ42 peptides. These regions are highly stable and resistant to proteolytic degradation.
+
+7. **Structural Polymorphism:** Aβ42 fibrils can exhibit structural polymorphism, meaning they can adopt different conformations and morphologies depending on factors such as peptide concentration, solution conditions, and the presence of cofactors or ligands.
+
+#### Amyloid Fibrilation
+
+```{r echo = F, fig.cap = 'Amyloid Fibriliation Steps', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/amyloid_fibrilation.png')
 ```
 
-Inside plant cells, the chloroplast genome holds some fascinating secrets. It's like a carefully preserved book of instructions that gets passed down from generation to generation in plants. What's really intriguing is that this chloroplast genome is quite consistent across various plant species. Imagine it as a well-organized circular chromosome with four different sections, kind of like how you divide a notebook into different chapters.
+The amyloid fibrillation process of amyloid beta (Aβ) peptides, particularly Aβ42, involves a series of steps leading to the formation of insoluble aggregates known as amyloid fibrils. Here are the key steps involved in the fibrillation of Aβ peptides:
 
-These sections include a large region filled with single-copy genes, a smaller region with more single-copy genes, and two segments known as inverted repeats A and B (IRA and IRB). These inverted repeats are like having two copies of the same chapter back-to-back. But here's the twist: the size of this chloroplast genome can vary from one plant species to another, ranging from 69 to 521 kilobytes. It's like different versions of the same book, but with a few extra pages here and there.
+1. **Nucleation Phase:**
+   - The fibrillation process begins with the nucleation phase, where monomeric Aβ peptides undergo a conformational change from a soluble, random coil structure to a partially folded intermediate state.
+   - Several monomeric Aβ peptides associate to form small, stable aggregates known as oligomers or nuclei. These nuclei serve as templates for the further growth of fibrils.
+   - Nucleation is often considered the rate-limiting step of amyloid fibrillation and can be influenced by factors such as peptide concentration, pH, temperature, and the presence of cofactors.
 
-Now, what's really important is what these genes in the chloroplast genome are up to. They're like the main characters in a thrilling story of photosynthesis. These genes include all the instructions for creating ribosomal RNAs (rRNAs) and a full set of genes for transfer RNAs (tRNAs). In addition, there are around 100 single-copy genes that mostly code for proteins essential in the magical world of photosynthesis.
+2. **Elongation Phase:**
+   - Once nuclei are formed, additional monomeric Aβ peptides bind to the existing aggregates, elongating them and promoting fibril growth.
+   - The elongation phase involves the addition of Aβ peptides to the ends of existing fibrils, leading to the formation of protofilaments, which are linear aggregates of peptides arranged in a parallel or antiparallel fashion.
+   - The elongation process proceeds through a mechanism of monomer addition, where soluble Aβ peptides bind to exposed ends of protofilaments, incorporating into the growing fibril structure.
 
-For instance, there's a gene called **rbcL** that's responsible for making a protein crucial in photosynthesis. It's like the superstar of the show. And then there's **ndh**, which plays an essential role in energy production. All these genes work together like a well-coordinated cast to perform the incredible act of turning sunlight into energy. It's like a plant's secret recipe for turning light into life!
+3. **Maturation Phase:**
+   - As fibrils continue to grow, they undergo structural rearrangements and maturation, leading to the formation of mature amyloid fibrils.
+   - Mature fibrils are characterized by their stable, cross-beta architecture, with individual peptide strands aligned perpendicular to the long axis of the fibril.
+   - The maturation phase may involve the lateral association of protofilaments and the twisting of fibrils to form higher-order structures with a twisted ribbon morphology.
 
-### Mitochondrial Genome
+4. **Secondary Nucleation and Fragmentation:**
+   - In addition to elongation, secondary processes such as secondary nucleation and fibril fragmentation can also contribute to the overall kinetics of amyloid fibrillation.
+   - Secondary nucleation involves the generation of new nuclei from existing fibril surfaces, leading to the formation of new fibrils and the amplification of fibril growth.
+   - Fibril fragmentation occurs when mature fibrils break apart into smaller fragments, which can serve as seeds for the formation of new fibrils or promote the growth of existing fibrils.
 
-```{r echo = F, fig.cap = 'Illustration of a Plant Mitochondrial Genome', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/mitochondrial_genome.png')
+5. **Fibril Aggregation and Toxicity:**
+   - As amyloid fibrils continue to accumulate, they can aggregate further to form higher-order structures, such as amyloid plaques, which are pathological hallmarks of neurodegenerative diseases like Alzheimer's disease.
+   - Oligomeric intermediates formed during the fibrillation process are thought to be particularly toxic to neurons, contributing to neuronal dysfunction and cell death in neurodegenerative disorders.
+
+#### A$\beta$ Aggregation and Clearance
+
+```{r echo = F, fig.cap = 'A$\beta$ Aggregation and Clearance', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/abeta_clearance.png')
 ```
 
-The interesting thing is that plant mitochondrial genomes can be incredibly diverse in size, ranging from around 200 kilobytes to a whopping 10 megabytes. That's like having a storybook that can be as short as a postcard or as long as an entire library! In contrast, animal mitochondrial genomes are usually compact, around 16 kilobytes, and don't contain those extra blank pages.
+The clearance and aggregation of amyloid beta (Aβ) peptides are key processes that influence their accumulation and toxicity in the brain, particularly in the context of Alzheimer's disease. Here's an overview of Aβ clearance mechanisms and factors contributing to its aggregation:
 
-Now, what makes plant mitochondrial genomes even more intriguing is the abundance of noncoding sequences. These **noncoding regions** are like the margins and empty pages in a book, taking up more than 90% of the Arabidopsis mitochondrial DNA. It's as if there are pages upon pages of text that don't directly tell the story but are there for some mysterious reason.
+1. **Aβ Clearance Mechanisms:**
+   - **Enzymatic Degradation:** Aβ peptides can be enzymatically degraded by proteases, such as neprilysin, insulin-degrading enzyme (IDE), and matrix metalloproteinases (MMPs), which cleave Aβ into smaller, soluble fragments that can be cleared from the brain.
+   - **Microglial Phagocytosis:** Microglial cells, the resident immune cells of the brain, can engulf and clear Aβ peptides through phagocytosis. Microglia express various cell surface receptors, including scavenger receptors, that recognize and internalize Aβ aggregates for degradation within lysosomes.
+   - **Transport Across the Blood-Brain Barrier (BBB):** Aβ peptides can be transported across the BBB from the brain to the bloodstream, where they can be cleared by systemic mechanisms, including renal clearance and uptake by the liver.
+   - **Cerebrospinal Fluid (CSF) Clearance:** Aβ peptides in the brain interstitial fluid can diffuse into the CSF and be cleared from the central nervous system (CNS) via bulk flow mechanisms, including drainage into the lymphatic system.
 
-Another notable feature is that plant mitochondrial genomes don't have a full set of **transfer RNAs (tRNAs)**, which are essential for the translation of genetic instructions into proteins. So, it's like having a storybook with missing words that need to be borrowed from other books in the cell's library to make sense of the story. This unique structure and content of plant mitochondrial genomes make them quite different from their animal counterparts, adding another layer of complexity to the incredible world of plant genetics.
+2. **Factors Influencing Aβ Aggregation:**
+   - **Aβ Production Rate:** The rate of Aβ production, determined by the proteolytic processing of amyloid precursor protein (APP), influences the concentration of soluble Aβ peptides available for aggregation. Increased production or impaired clearance of Aβ can lead to its accumulation and aggregation.
+   - **Aβ Oligomerization:** Aβ peptides can form soluble oligomeric intermediates during the early stages of aggregation, which are thought to be particularly toxic to neurons and synapses. Oligomers can further assemble into larger aggregates, including protofibrils and mature amyloid fibrils.
+   - **Seeding and Nucleation:** The presence of pre-existing Aβ aggregates, or seeds, can promote the nucleation and aggregation of soluble Aβ peptides by providing templates for fibril growth. Seeding can accelerate the aggregation process and contribute to the propagation of Aβ pathology in the brain.
+   - **Cellular Environment:** Factors within the cellular microenvironment, such as pH, metal ions (e.g., copper, zinc), lipid membranes, and chaperone proteins, can influence the conformation and stability of Aβ peptides, affecting their propensity to aggregate.
 
-```{r echo = F, fig.cap = 'Recombination in Plant Mitochondrial Genomes', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/recombination.png')
+## Tau Protein    
+
+```{r echo = F, fig.cap = 'Phosphorylation and Aggregation of the Tau Protein', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/tau_protein.png')
 ```
 
-Nonetheless, picture the plant mitochondrial genome as a novel that has been cut into circles, just like those classic fairy tales that you read in an interactive pop-up book.
+Phosphorylation and aggregation of the Tau protein are central events in the pathogenesis of several neurodegenerative diseases, collectively referred to as **tauopathies**, including Alzheimer's disease. Here's an overview of the relationship between phosphorylation and aggregation of Tau:
 
-The reason behind these subgenomic circles is something called **recombinations**. It's like taking pages from different parts of the book and connecting them in new and unexpected ways, creating a fascinating twist in the plot. These circular segments have their own distinct stories to tell, and together, they make up the entire narrative of the mitochondrial genome.
+1. **Tau Protein Structure:**
+   - Tau is a microtubule-associated protein (MAP) that plays a crucial role in stabilizing microtubules and facilitating axonal transport in neurons.
+   - Tau is primarily expressed in neurons and undergoes alternative splicing to generate six isoforms in the adult human brain, ranging from 352 to 441 amino acids in length.
+   - Tau contains multiple serine and threonine residues that can be phosphorylated by various protein kinases, regulating its physiological function and cellular localization.
 
-### DNA Movement in Plants
+2. **Phosphorylation of Tau:**
+   - Under normal physiological conditions, Tau is subject to dynamic phosphorylation and dephosphorylation events, which regulate its interaction with microtubules and other cellular components.
+   - Phosphorylation of Tau is tightly regulated by multiple protein kinases, including glycogen synthase kinase 3β (GSK3β), cyclin-dependent kinase 5 (CDK5), and protein kinase A (PKA), among others.
+   - Phosphorylation of Tau at specific sites can disrupt its binding to microtubules, leading to microtubule destabilization and impairing axonal transport.
+   - Aberrant hyperphosphorylation of Tau is a hallmark pathological feature of tauopathies, resulting in the accumulation of hyperphosphorylated Tau in the form of intracellular neurofibrillary tangles (NFTs) and neuropil threads.
 
-```{r echo = F, fig.cap = 'DNA Movements in Plants', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/dna_movement.png')
+3. **Aggregation of Tau:**
+   - Hyperphosphorylated Tau has a reduced affinity for microtubules and an increased propensity to self-aggregate into insoluble fibrillar structures.
+   - The aggregation process of Tau involves the formation of soluble oligomeric intermediates, protofibrils, and mature paired helical filaments (PHFs) and straight filaments (SFs), which constitute the core of NFTs.
+   - Tau aggregation disrupts neuronal function, impairs synaptic transmission, and promotes neurotoxicity, ultimately leading to neuronal dysfunction and cell death.
+   - The spread of pathological Tau aggregates throughout the brain correlates with disease progression in tauopathies and contributes to the characteristic pattern of neurodegeneration observed in affected brain regions.
+
+4. **Role in Disease Pathogenesis:**
+   - Accumulation of hyperphosphorylated and aggregated Tau is thought to disrupt neuronal homeostasis, impair cellular processes, and trigger neuroinflammatory responses, ultimately leading to neuronal degeneration and cognitive decline in tauopathies.
+   - Therapeutic strategies targeting Tau phosphorylation and aggregation represent promising avenues for the development of disease-modifying treatments for Alzheimer's disease and related tauopathies.
+
+### Structure of the Tau Protein
+
+```{r echo = F, fig.cap = 'Structure of the Tau Protein', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/tau.png')
 ```
 
-Imagine DNA as a set of secrets that different parts of a plant's cells share with each other. In the world of plants, these secrets move around like characters in an intriguing drama. You see, the mitochondrial genomes in plants hold pieces of information that are similar to what's found in chloroplast DNA and nuclear DNA.
+The structure of tau filaments, particularly those found in neurofibrillary tangles (NFTs) in the brains of individuals with Alzheimer's disease and other tauopathies, is characterized by its intricate arrangement of protein subunits and its contribution to neuronal dysfunction and cell death. Here's an overview of the structure of tau filaments:
 
-It's like having overlapping storylines in different books. These shared secrets are not only within the mitochondria but also in the chloroplasts and the nucleus. Some might call it "**promiscuous DNA**" because these DNA sequences are a bit like characters who appear in multiple books – in this case, the three genetic systems of plant cells.
+1. **Composition:**
+   - Tau filaments are composed primarily of hyperphosphorylated tau protein, a microtubule-associated protein that normally stabilizes microtubules in neurons.
+   - Hyperphosphorylated tau undergoes conformational changes and self-aggregates into insoluble fibrillar structures, forming the core of NFTs.
 
-### Polyploidy in Plants
+2. **Core Structure:**
+   - Tau filaments have a characteristic cross-beta structure, where individual tau molecules assemble into beta-sheet-rich fibrils arranged perpendicular to the long axis of the filament.
+   - The core of tau filaments consists of repeating units of tau protein arranged in a helical or straight configuration, depending on the isoform of tau and the specific disease state.
 
-**Polyploidy** is like a genetic superstar in the plant world. It's when plants have extra copies of their entire set of genes, which makes them a bit like having a spare key to the genetic code. In fact, this phenomenon is super common among plants. To put it in numbers, around half to two-thirds of all flowering plants are polyploids. And when we look at ferns, it's more than 99% of them, and for grasses, it's about 80%.
+3. **Subunit Arrangement:**
+   - The arrangement of tau subunits within filaments can vary, giving rise to different morphological subtypes of tau filaments, including paired helical filaments (PHFs) and straight filaments (SFs).
+   - PHFs are characterized by a twisted ribbon-like morphology, where individual tau molecules twist around the filament axis, forming paired helices.
+   - SFs, on the other hand, have a straight, unbranched morphology, with tau molecules aligned parallel to the filament axis.
 
-Now, let's dive into some real-life examples. Take wheat, for instance. It started with an ancestor that had 14 chromosomes (the genetic code). But over time, it doubled its chromosomes to 28, and then the emmer or durum wheat doubled them again to 42. It's like having more puzzle pieces to work with.
+4. **Cross-Beta Architecture:**
+   - Within tau filaments, tau molecules interact through intermolecular hydrogen bonds between beta-strands, forming a stable cross-beta architecture.
+   - The cross-beta structure confers stability to tau filaments and renders them resistant to proteolytic degradation and clearance mechanisms.
 
-Or, consider Lotus, a plant that decided to double its chromosomes when dinosaurs were still roaming the Earth. This might sound strange, but it was its way of adapting and surviving in a changing world.
+5. **Post-Translational Modifications:**
+   - In addition to hyperphosphorylation, tau filaments may undergo other post-translational modifications, such as acetylation, glycation, and truncation, which can further modulate their structure and stability.
+   - These modifications may influence the aggregation propensity and neurotoxicity of tau filaments and contribute to the heterogeneity observed in tauopathies.
 
-So why is polyploidy such a big deal for plants? Well, it gives them more flexibility to adapt and change. They can handle significant shifts in their body plans and, in some cases, even thrive when their environment throws curveballs. Sometimes, polyploidy happens accidentally when different plants interbreed. And in other cases, humans have a hand in selecting plants with extra genes to create better crops. It's like nature's way of remixing the genetic code, leading to a diverse and resilient plant kingdom.
+6. **Pathological Implications:**
+   - The accumulation of tau filaments, along with other pathological changes, such as amyloid beta plaques, neuroinflammation, and synaptic dysfunction, contributes to neuronal degeneration and cognitive decline in tauopathies.
+   - Tau filaments disrupt cellular processes, impair axonal transport, and promote synaptic dysfunction, ultimately leading to neurodegeneration and cell death.
+   
+### Spread of Amyloid Plaques
 
-#### History of Wheat
-
-```{r echo = F, fig.cap = 'Illustration of Einkorn Wheat\'s History', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/einkorn_wheat.png')
+```{r echo = F, fig.cap = 'Spread of Amyloid Plaques', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/spread.png')
 ```
 
-The story of wheat is like a fascinating puzzle that unfolded over thousands of years. It all began around 10,000 years ago when two different types of grasses decided to mix their genetic codes. This was the first step in creating what we now know as bread wheat, scientifically called *Triticum aestivum*.
+The spread of amyloid plaques and neurofibrillary tangles (NFTs) in the brain is a hallmark feature of Alzheimer's disease and related tauopathies. Here's an overview of how these pathological structures spread throughout the brain:
 
-But the story doesn't stop there. Around 8,000 years ago, this newly formed hybrid wheat met another type of wheat called **Emmer wheat**. When they got together, something magical happened: the number of chromosomes doubled in the new hybrid. So, instead of the typical 14 chromosomes that these grasses usually had, this new species had 42 chromosomes. It's like the plant world's version of a genetic jigsaw puzzle.
+1. **Amyloid Plaque Spread:**
+   - Amyloid plaques primarily consist of aggregated amyloid beta (Aβ) peptides and are typically found in the extracellular space surrounding neurons.
+   - The spread of amyloid plaques in the brain follows a stereotypical pattern, with initial deposition occurring in specific regions and spreading to interconnected brain regions over time.
+   - The earliest deposits of amyloid plaques often occur in the neocortex, particularly in regions involved in higher cognitive functions such as the hippocampus and association cortices.
+   - As the disease progresses, amyloid plaques spread to additional cortical areas and subcortical structures, including the basal forebrain, thalamus, and eventually the brainstem and cerebellum.
+   - The spread of amyloid plaques is thought to occur through a combination of neuronal transport, synaptic transmission, and diffusion of soluble Aβ species, as well as seeding and templating mechanisms.
 
-This complex history of hybridization and chromosome doubling gave us the wheat we know today. It's a plant with six complete sets of seven chromosomes each, making it one of the most important crops in the world. The journey of wheat, from its humble beginnings to becoming a crucial food source, is a testament to the power of nature and human cultivation.
+2. **Neurofibrillary Tangle Spread:**
+   - Neurofibrillary tangles (NFTs) are intracellular aggregates primarily composed of hyperphosphorylated tau protein, which forms paired helical filaments and straight filaments within neurons.
+   - Similar to amyloid plaques, the spread of NFTs in the brain follows a hierarchical pattern, with initial deposition in specific brain regions and subsequent spread to interconnected areas.
+   - The earliest NFT pathology is often observed in the entorhinal cortex and hippocampus, regions crucial for memory formation and consolidation.
+   - NFTs then spread to adjacent cortical areas and subcortical structures, including the amygdala, basal forebrain, and neocortex, as the disease progresses.
+   - The spread of NFTs is thought to occur through neuronal connectivity pathways, with pathological tau species propagating from neuron to neuron via axonal transport, synaptic transmission, and trans-synaptic spread.
 
-### Whole Genome Duplications
+3. **Interaction Between Amyloid and Tau Pathology:**
+   - There is evidence to suggest that amyloid pathology may precede and drive the accumulation of tau pathology in Alzheimer's disease.
+   - Soluble forms of Aβ peptides may trigger tau hyperphosphorylation and aggregation, leading to the formation of NFTs and subsequent neurodegeneration.
+   - Conversely, pathological forms of tau may exacerbate amyloid pathology by impairing Aβ clearance mechanisms and promoting amyloid plaque deposition.
+   
+## ApoE4
 
-```{r echo = F, fig.cap = 'Phylogenetic Tree for Plants', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/family_tree.png')
+```{r echo = F, fig.cap = 'ApoE Illustration', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/apoe.png')
 ```
 
-Imagine going back in time millions of years to witness a remarkable event in plant evolution. It's called **Ancient Whole Genome Duplication**, or **WGD** for short. This phenomenon occurred several million years ago and played a crucial role in shaping the world of plants.
+Apolipoprotein E4 (ApoE4) is a well-established genetic risk factor for late-onset Alzheimer's disease (AD), contributing to an increased susceptibility to developing the disease compared to other isoforms of apolipoprotein E (ApoE). Here's an overview of ApoE4 and its association with AD risk:
 
-One of the most significant WGD events took place around 160 million years ago, and it's believed to have set the stage for all the flowering plants we see today. You can think of it as the common ancestor of all modern flowering plants.
+1. **Apolipoprotein Structure:**
+   - Apolipoproteins are essential components of lipoproteins, which are lipid-protein complexes involved in transporting cholesterol and other lipids through the bloodstream.
+   - The structure of lipoproteins includes triacylglycerol, cholesterol, phospholipids, and amphipathic proteins known as apolipoproteins.
+   - ApoE is one of the major apolipoproteins found in the brain and peripheral tissues, playing a crucial role in lipid metabolism and transport.
 
-During these ancient WGD events, plants ended up with extra copies of their entire set of genes. It might sound like a genetic surplus, but over time, it turned out to be a blessing. This redundancy allowed the genes to evolve in different ways, free from the usual selection pressures. In simple terms, it gave plants more room to adapt and thrive.
+2. **ApoE Isoforms:**
+   - There are three common isoforms of ApoE: ApoE2, ApoE3, and ApoE4, encoded by different alleles of the APOE gene.
+   - ApoE3 is the most prevalent isoform in the general population, followed by ApoE4 and then ApoE2.
+   - Each ApoE isoform differs in its amino acid sequence, leading to variations in its structure and function.
 
-As time went on, many of these extra gene copies became dormant or were lost. This process is known as **diploidization**, and it helped the plants return to their usual genetic status. For example, if you take a look at a plant like Arabidopsis or even humans, you'll find evidence of this ancient duplication in their genomes.
+3. **AD Risk:**
+   - Numerous studies have shown that carrying the ApoE4 allele is associated with an increased risk of developing late-onset AD, the most common form of Alzheimer's disease.
+   - Individuals who inherit one copy of the ApoE4 allele (heterozygous) have a higher risk of developing AD compared to those with two copies of the ApoE3 allele (homozygous).
+   - The risk of developing AD is further elevated in individuals who inherit two copies of the ApoE4 allele (homozygous).
 
-So, why is this ancient WGD so important for plants? Well, first, it allowed plants to tinker with their genes, which ultimately led to better adaptation to their environments. It also improved their agronomics, making them more suitable for domestication and human use. Plus, it played a significant role in the creation of new plant species.
+4. **Mechanisms of AD Risk:**
+   - The exact mechanisms by which ApoE4 increases the risk of AD are not fully understood but may involve multiple pathways.
+   - ApoE4 has been implicated in various processes associated with AD pathogenesis, including amyloid beta aggregation, tau pathology, neuroinflammation, synaptic dysfunction, and impaired lipid metabolism.
+   - ApoE4 may modulate the clearance and metabolism of amyloid beta peptides, leading to their accumulation and the formation of amyloid plaques, a hallmark pathological feature of AD.
 
-## Evolution of C~4~ Photosynthesis
+5. **Receptor Recognition and Lipid Transport:**
+   - ApoE isoforms can interact with cell surface receptors, such as the low-density lipoprotein receptor (LDLR) and the apolipoprotein E receptor 2 (ApoER2), mediating the uptake and clearance of lipoprotein particles.
+   - Dysfunction in the receptor-mediated clearance of lipoproteins, particularly those containing ApoE4, may contribute to the accumulation of pathological proteins and lipid dysregulation in the brain, promoting AD pathogenesis.
+   
+## Microglia
 
-```{r echo = F, fig.cap = 'Illustration of C~4~ Photosynthesis', fig.align = 'center'}
-knitr::include_graphics("../imgs/week9/C4_photosynthesis.png")
+```{r echo = F, fig.cap = 'Microglia', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/microglia.png')
 ```
 
-Let's journey back to the days when plants were just starting to figure out the best way to photosynthesize, or make their food using sunlight. This was a crucial evolutionary moment, leading to something known as **C~4~ photosynthesis**.
+**Microglia**, comprising approximately 10% of the cells in our brain, are resident phagocytic immune cells critical for maintaining brain homeostasis and responding to pathological insults. They play a pivotal role in immune surveillance, synaptic pruning, and neuroinflammatory responses.
 
-Imagine a time when the Earth's atmosphere had less carbon dioxide, or CO~2~, and the climate was hot and dry. During this period, plants were under pressure to find a better way to capture CO~2~ and make food efficiently. That's where C~4~ photosynthesis comes into play.
+Recent studies have identified mutations in the TREM2 gene as a risk factor for Alzheimer's disease. TREM2, or Triggering Receptor Expressed on Myeloid cells 2, is a gene predominantly expressed in microglia, indicating the crucial involvement of these cells in Alzheimer's pathology.
 
-C~4~ photosynthesis is like a special trick that certain plants developed to thrive in these challenging conditions. It's an adaptation that helps plants work more efficiently, especially when there's not much CO~2~ around.
+The association between TREM2 mutations and Alzheimer's disease underscores the importance of microglia in the disease process. Microglia, activated by factors such as amyloid beta accumulation and tau pathology, can exhibit both neuroprotective and neurotoxic functions. Understanding the role of microglia in Alzheimer's disease may provide insights into potential therapeutic strategies aimed at modulating microglial responses to mitigate neurodegeneration and cognitive decline.
 
-Now, here's the fascinating part: C~4~ photosynthesis didn't just happen once. It's an example of what scientists call **convergent evolution**, which is a bit like when different groups of plants figure out the same solution to a problem. In fact, it's happened over 60 times in various plant species around the world.
-
-### Evolution of C~4~ Plants
-
-```{r echo = F, fig.cap = 'Evolution of C~4~ Plants\'s Fitness', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/C4_fitness.png')
+```{r echo = F, fig.cap = 'Roles of Microglia', fig.align = 'center'}
+knitr::include_graphics('../imgs/week9/roles.png')
 ```
 
-Imagine 62 different branches of plants, each with its unique adaptation for C~4~ photosynthesis. These branches are spread across two big plant groups: the **eudicots** (like sunflowers) and the **monocots** (like grasses). Among these, 21 branches are what scientists call "C~3~-C~4~ intermediates." This means they have features that are kind of in between the older C~3~ photosynthesis and the more advanced C~4~ system.
+Microglia, the resident immune cells of the brain, play complex roles in Alzheimer's disease (AD), contributing to both disease progression and potential therapeutic interventions. Here's an overview of their multifaceted involvement:
 
-When we look at the geographic map, it's fascinating to see that many of these C~4~ plant lineages are concentrated in regions with arid or semi-arid climates. It's like nature's way of helping these plants deal with challenging environments.
+1. **Immune Response:** Microglia are activated in response to pathological insults in AD, including the accumulation of amyloid beta (Aβ) plaques and tau tangles. Initially, microglia may attempt to clear these protein aggregates through phagocytosis, aiming to maintain brain homeostasis and limit neuronal damage.
 
-Now, let's break down the evolutionary journey. The first step was the development of something called "**proto-Kranz anatomy**." This involves the plant making changes to its leaves, like reducing the space between leaf veins and making the bundle sheath cells (BSC) larger.
+2. **Inflammatory Response:** While microglial activation is crucial for immune surveillance, excessive or dysregulated activation can lead to neuroinflammation, contributing to neuronal dysfunction and neurodegeneration in AD. Activated microglia release pro-inflammatory cytokines, reactive oxygen species (ROS), and other neurotoxic molecules, exacerbating neuronal damage.
 
-Next came the evolution of a sort of "photo-respiratory CO~2~ pump." This is like fine-tuning the plant's engine to work more efficiently. It involved improving a process called the glycine shuttle, making it more effective.
+3. **Synaptic Pruning:** Microglia play a role in synaptic pruning, the process of eliminating unnecessary or dysfunctional synapses during brain development and in adulthood. In AD, microglia may aberrantly prune synapses in response to Aβ accumulation, leading to synaptic loss and cognitive impairment.
 
-Finally, the C~4~ cycle itself evolved. In this phase, plants increased the activity of enzymes, such as PEPC, in the mesophyll cells (MC), which allowed them to capture carbon dioxide better. They also improved the work of enzymes in the bundle sheath cells (BSC), where the C~3~ cycle was becoming confined. Essentially, the plant got really good at taking in CO~2~ and using it to make food, even when it's scarce.
+4. **Phagocytosis and Clearance:** While microglia initially attempt to clear Aβ plaques and tau tangles, their phagocytic capacity may become impaired with disease progression. Dysfunctional microglia may fail to efficiently clear protein aggregates, allowing them to accumulate and contribute to neurotoxicity.
 
-### mRNA Blueprint for C~4~ Photosynthesis
+5. **Modulation of Neuroinflammation:** Microglia exhibit phenotypic heterogeneity, with both pro-inflammatory (M1-like) and anti-inflammatory (M2-like) states. Modulating microglial polarization toward an anti-inflammatory phenotype may have therapeutic potential in AD, dampening neuroinflammation and promoting neuroprotection.
 
-Scientists embarked on a remarkable journey by carefully selecting closely related plant species: *Cleome spinosa* (a C~3~ plant), *Cleome gynandra* (a C~4~ plant), and *Arabidopsis thaliana* (another C~3~ plant). These plants became the stars of their study.
+6. **Genetic Risk Factors:** Genetic studies have identified mutations in microglia-specific genes, such as TREM2, as risk factors for AD. These mutations can impair microglial function, compromising their ability to respond to pathological stimuli and clear protein aggregates.
 
-Imagine the scientists used a cutting-edge method called **massive parallel mRNA sequencing**. It's like reading the genetic instruction manuals (mRNA) of these plants on a grand scale. They then carefully annotated these sequences, like highlighting important passages in a book.
+7. **Therapeutic Target:** Despite their dual roles in neuroprotection and neurotoxicity, microglia represent a promising therapeutic target in AD. Strategies aimed at modulating microglial activation, promoting phagocytosis, and dampening neuroinflammation are under investigation as potential disease-modifying therapies.
 
-Here's what they discovered:
+## Treating AD 
 
-1. **Differences in Gene Abundance**: The mRNA sequences from these plants showed significant differences in the abundance of certain genes. These genes included those responsible for transcription factors, transport proteins, and others involved in chloroplast movement, cell wall modifications, and plasmodesmatal connectivity. These genes are like the architects and builders of the C~4~ photosynthesis system.
+Interventions for Alzheimer's disease (AD) aim to target various pathological mechanisms underlying the disease process. Here are some promising opportunities for AD intervention:
 
-2. **Shifting Transcription Profiles**: They found that these plants had large shifts in their transcription profiles for specific functional classes. This means that the genes responsible for C~4~ photosynthesis were more active in the C~4~ plant (Cleome gynandra) than in the C~3~ plants (Cleome spinosa and Arabidopsis thaliana). It's like the C~4~ plant had a team of workers putting in overtime to make C~4~ photosynthesis happen.
+1. **Inhibitors of β-Secretase and γ-Secretase:**
+   - β-secretase and γ-secretase are enzymes involved in the production of amyloid beta (Aβ) peptides, which aggregate to form plaques in the brain, a hallmark of AD.
+   - Inhibitors targeting β-secretase or γ-secretase aim to reduce the production of Aβ peptides, thereby potentially slowing down the accumulation of amyloid plaques.
+   - However, targeting γ-secretase may have potential side effects due to its involvement in the processing of other proteins essential for normal cellular function.
 
-3. **Reduced Need for Photorespiration**: In the C~4~ plant, Cleome gynandra, they noticed a lower demand for a process called photorespiration. This process usually slows down photosynthesis, but C~4~ plants have figured out how to minimize it.
+2. **Immunotherapies and Tau Inhibitors:**
+   - Immunotherapies involve the use of antibodies or vaccines to target and clear abnormal proteins, such as Aβ or tau, from the brain.
+   - Antibodies targeting Aβ have shown some success in reducing amyloid plaque burden in clinical trials, although results have been mixed.
+   - Small molecules that inhibit the aggregation and spread of tau protein may also be promising therapeutic candidates, as tau pathology correlates closely with cognitive decline in AD.
 
-4. **High Levels of C~4~ Enzymes**: They confirmed their findings by looking at the enzymatic activities in these plants. The C~4~ plant had high levels of transcripts (genetic instructions) for enzymes specifically involved in C~4~ photosynthesis.
-
-### Genome Duplication and Origin of C~4~ Photosynthesis
-
-Imagine that scientists carefully selected two closely related plant species: *Gynandropsis gynandra* (a C~4~ plant) and *Tarrenaya hassleriana* (a C~3~ plant) that went through a whole-genome duplication event. It's like comparing two siblings to understand the family's history.
-
-These scientists then performed whole gene sequencing and meticulously compared the genetic material in these plants, almost like reading the entire genetic book of their lives.
-
-Here's what they uncovered:
-
-1. **Shared Whole Genome Duplication**: *Gynandropsis gynandra* (the C~4~ plant) shared the history of a whole genome duplication with *Tarrenaya hassleriana* (the C~3~ plant). It's like both siblings having a common ancestor who gave them a duplicate set of genes.
-
-2. **Similar Gene Copy Numbers**: Despite this shared duplication, the number of gene copies was quite similar between the C~4~ and C~3~ plants. It's like both siblings inherited nearly identical sets of books, even though there were duplicates.
-
-3. **Transcript Regulation**: They also looked at how genes are expressed, or turned on, in these plants. What they found was that the C~4~ plant, *Gynandropsis gynandra*, had fewer differences in gene regulation compared to the C~3~ plant, *Tarrenaya hassleriana*. It's like one sibling adhering closely to the original story, while the other made slight adaptations.
-
-Based on these discoveries, scientists drew a conclusion - it's more likely that the shift to C~4~ photosynthesis involved tweaking the regulation of existing genes rather than creating entirely new functions from duplicated genes. It's as if both siblings had the same set of Lego blocks, but one built a new structure using different arrangements.
-
-## Genomics
-
-So, what's **genomics** all about? It's the science that dives deep into an organism's genetic makeup. This genetic makeup influences everything about that organism, from how it grows to how it functions.
-
-There are two key components in genomics:
-
-1. **Whole Genome Sequencing**: Imagine reading every single letter in a book, cover to cover, to understand the whole story. In genomics, we do the same, but instead of letters, we're dealing with DNA, the genetic code.
-
-2. **Function Characterization**: Now, reading the book is just the beginning. We want to know how the story unfolds. That's where things like transcriptomics (studying gene activity), metabolomics (examining the molecules involved in metabolism), proteomics (investigating proteins), and epigenomics (exploring how genes are regulated) come into play. They help us understand how genes actually work and interact.
-
-### Whole Genome Sequencing
-
-Imagine you have a really exciting book, but you want to read every word in it. That's what scientists do with **whole genome sequencing (WGS)**. They read every single letter in an organism's DNA, which is like the book of life for that organism. But here's the cool part: this technology has gone through some amazing changes. 
-
-```{r echo = F, fig.cap = 'Cost of Sequencing the Whole Human Genome', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/human_genome_cost.png')
-```
-
-In the beginning, it was pretty expensive and slow, like the first generation of WGS, where they used a method called Sanger sequencing. It was like carefully reading the book one letter at a time. 
-
-Then, things got faster and cheaper with the second generation. They used super high-tech machines like Illumina's sequencers that could read millions of letters all at once. It was like speed-reading a whole library! 
-
-And now, we're in the third generation of WGS. This is like having a magical book that you can read without tearing it apart. These new technologies don't need to cut the DNA into tiny pieces, and they give us long, uninterrupted sequences. It's kind of like reading a really long story without any breaks. 
-
-#### Why do Whole Genome Sequencing?
-
-Whole genome sequencing is like opening a treasure chest of knowledge in the world of genetics. When we unlock the secrets hidden in an organism's entire genetic code, we can uncover remarkable insights.
-
-Firstly, it offers a window into the past, helping us understand how species have evolved over time. It's like looking at old family photos to see where you came from.
-
-Then, there are those elusive genes that are quite shy and don't like to be cloned the traditional way. Whole genome sequencing gives us a sneak peek at these mysterious genes that play crucial roles in essential plant processes, such as building wood or making flowers bloom.
-
-It's like having a backstage pass to a concert – we get to see the stars behind the scenes.
-
-Whole genome sequencing also shines a spotlight on gene families. These are like different branches of the same big genetic tree. They help us confirm the unique qualities of a species. It's like discovering that all the members of a family have a shared love for music.
-
-Moreover, this incredible technology helps us create a comprehensive catalog of all the DNA variations within a species. Think of it as collecting all the different colors in a painter's palette. When we know these variations, we can use them to understand traits and even guide breeding.
-
-### Illumina Sequencing Technology
-
-First, scientists create something called a **genomic library**. Imagine it's like a treasure chest filled with tiny DNA fragments. Each of these fragments is like a piece of a puzzle. They add special sequences to these puzzle pieces that help the sequencing machine do its job.
-
-Now, here's where the magic happens. The machine takes these little DNA fragments and makes a bunch of copies of them, like a photocopier. It creates hundreds of identical copies in what they call **clusters**.
-
-Once the clusters are ready, the machine starts sequencing. It's like reading a book, but in this case, it's reading the DNA letters. For each letter (A, T, C, or G), they use a special tag that's like a tiny colored flag. As they read the DNA, the machine records which flag (or base) is added. They do this over and over, like reading one page after another.
-
-After they've read everything, they analyze the data. They look at all the flagged bases to figure out the DNA's sequence.
-
-What's really amazing is that this technology can do all of this for millions of DNA clusters at once, making it super fast. And because they read the DNA twice, once for each strand, it's incredibly accurate. It's like having two proofreaders for every book, so you don't miss a single typo.
-
-### Single Molecule Real Time (i.e., SMRT) Sequencing
-
-```{r echo = F, fig.cap = 'Steps Involved in SMRT Sequencing', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/smrt_sequencing.png')
-```
-
-First, scientists take their DNA and put these special **hairpin loop adapters** on it. These adapters have a spot where the sequencing process can begin. Imagine the DNA bending back on itself to form a circle. This circular DNA is now ready for sequencing.
-
-Next, they bring in the star of the show: a DNA polymerase. Think of it like a tiny machine that reads the DNA. This polymerase is placed in something called a **zero-mode wave guide (ZMW) chamber**. The ZMW chamber is super tiny and acts like a little room where only one DNA fragment is allowed in at a time.
-
-Now, the exciting part begins. They start reading the DNA. As each DNA letter (A, T, C, or G) gets added, a special color-changing molecule, or fluorophore, is also attached. This molecule is like a tiny glowstick. When it lights up, it's a signal that a DNA letter has been read.
-
-But there's a twist. Once the DNA letter is read, the fluorophore is cleaved, which means it's snipped off. As it's snipped, it emits a little flash of detectable light. This flash tells scientists which DNA letter was there. It's like the DNA is revealing its secrets in real-time.
-
-The coolest thing is that this polymerase enzyme is super-efficient and fast, so it can read really long stretches of DNA without making mistakes. That's why SMRT sequencing is so amazing – it gives us incredibly long and accurate reads of DNA. It's like reading a whole book in one go instead of just a single page.
-
-### *Arabidopsis* Genome Findings
-
-Scientists first started working on Arabidopsis's genome back in 1996 and managed to finish it by 2000. To put that in perspective, it's like they started decoding a secret message and, four years later, they could read it all.
-
-They didn't just read the DNA letter by letter, though. Instead, they broke it into smaller pieces called **Bacterial artificial chromosomes**, or **BACs** for short. It's like taking apart a big puzzle and then putting it back together to see the whole picture.
-
-The Arabidopsis plant has a pretty small genome. We're talking about 115.4 million bases, which are like the DNA building blocks. That might sound like a lot, but compared to other plants, it's quite compact.
-
-Now, the cool part. Arabidopsis's genome has around 25,498 genes. These genes are like sentences in the plant's instruction manual, and they belong to about 11,000 different families. It's like having 11,000 different groups of sentences in the manual.
-
-But here's the catch – we don't know what all of these genes do. Scientists have only figured out the job of 69% of them by comparing them to genes with known functions. And when it comes to doing experiments to understand how these genes work, they've only studied about 9% of them. So, it's like having a manual with lots of pages still waiting to be read.
-
-Here's another interesting thing: Arabidopsis's evolution story is pretty unique. It went through a whole-genome duplication, which means it had two copies of its entire instruction manual at one point. Then, over time, it lost some of those genes and even made extra copies of some others. It's like having a book, making a photocopy of the whole thing, and then deciding which pages you don't need while printing some pages twice.
-
-#### More on the Genome
-
-```{r echo = F, fig.cap = 'Illustration of the Arabidopsis Genome', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/arabidopsis_genomes.png')
-```
-
-First off, when we look at the parts of the genome that code for important stuff (those are called exons), we find something intriguing. These exons are quite rich in a particular set of building blocks known as **GC pairs**. In fact, about 44% of these pairs are GC, which is more than the 32% in the non-coding regions called **introns**. It's like certain chapters in a book are written in a unique and special language.
-
-```{r echo = F, fig.cap = 'Segmentally Duplicated Regions in *Arabidopsis*\'s Genome', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/duplicated_arabidopsis.png')
-```
-
-Now, when it comes to the genes, there's a mix of uniqueness and togetherness. Imagine you have a bunch of friends. In the Arabidopsis genome, 35% of genes are like those unique pals who don't have many other similar friends around. But there's also a club where 37.4% of the genes belong to a multigene family, which is like having lots of cousins in your family tree.
-
-But wait, there's more to this genetic landscape. It's kind of like a wild garden where you find some jumping genes, also known as **transposons**. These transposons make up at least 10% of the genome. Interestingly, the areas where these genes hang out have fewer regular genes and don't swap genetic material as often. Think of it as a neighborhood where folks keep to themselves.
-
-Now, here's where things get really exciting. A big chunk of the genome is all about supporting the plant's metabolic processes, kind of like how your body has organs to keep you healthy. These genes help with various tasks, from photosynthesis (basically the plant's way of making food) to respiration (yes, plants breathe too), and even acquiring important minerals. It's like having a multitasking team working around the clock to keep the plant alive and well.
-
-The genome doesn't stop there. It's got a bunch of other genes responsible for making things like lipids (think plant fats), fatty acids, amino acids (the building blocks of proteins), and even nucleotides (the pieces that make up DNA). These genes are like the plant's very own recipe book for life.
-
-But there's more – pyruvate kinase and cell wall metabolism genes. They help create, repair, and modify the plant's protective outer layer. It's like having a construction crew to build and renovate the plant's fortress.
-
-### Challenges of Plant Genome Sequencing
-
-```{r echo = F, fig.cap = 'Challenges Regarding Genome Sequencing in Plants', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/challenges_sequencing.png')
-```
-
-The last two decades, from 2000 to 2020, have been truly remarkable in the world of plant genome sequencing. Scientists have made some incredible progress and faced some exciting challenges.
-
-During this time, they've published over a thousand plant genomes, which represent a whopping 788 different plant species. Imagine having a thousand different blueprints for plants! In the first ten years, most of the focus was on well-known model plants and essential crops, like the superstars of the plant world. These genomes were like the building blocks of our knowledge.
-
-However, the second decade was a game-changer. The number of genomes sequenced skyrocketed, increasing by 50 times! Researchers didn't just stick to the familiar faces; they ventured into the world of diverse and lesser-known species. They also improved the quality of these genome assemblies, ensuring they were more detailed and accurate. They even tackled some really big genomes, like the heavyweight champions of the plant world.
-
-But the adventure doesn't stop here. There are many more plant genome sequencing projects in the pipeline. One exciting example is the 10KP project, which aims to sequence the genomes of 10,000 different plant species. It's like a grand expedition to discover the genetic secrets of plant life.
-
-However, with every exciting journey, there are challenges. Scientists are striving to create gapless reference genomes, where there are no missing pieces in the plant's genetic puzzle. They also want to tackle more complex genomes, the ones that are like intricate mazes waiting to be unraveled. And they're working on building reference pan-genomes for a species, which means understanding not just one version of a plant's genome but all the possible variations.
-
-### Genome of Durian
-
-```{r echo = F, fig.cap = 'Local Chinese Publications Regarding Durian Sequencing', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/durian_publications.png')
-```
-
-The fascinating world of genomics recently took a delightful detour to explore the genome of the durian, a fruit of great local interest. To unlock the secrets within, scientists employed some impressive technical approaches. They used a combination of Single Molecule Real Time (SMRT) sequencing for those long reads and Illumina for shorter ones, like having both a telescope and a magnifying glass. They also performed RNA-seq, which is like eavesdropping on the conversations of different parts of the durian plant, such as the fruit, leaf, stem, and root.
-
-The genome they unveiled turned out to be 738 million base pairs in size, like a massive book of genetic information. Inside this genetic book, they discovered 45,335 predicted gene models, with an average size of 1.7 kilobases. Surprisingly, only 4% of these genes were unique to the durian. It's like finding a few unique words in a gigantic novel.
-
-The genome also contained a repeating theme, literally. About 54.8% of the genome was made up of repeated sequences, like reading the same sentence over and over.
-
-But here's where it gets even more exciting. The durian's genes started singing during the fruiting season. Genes related to sulfur, ethylene, and lipids became more active. Two special genes called methionine lyase (MCL) and aminocyclopropane carboxylic acid synthase (ACS) were in the spotlight. They joined forces with their entourage of molecules, creating something called volatile sulfur compounds (VSC) and ethylene.
-
-What's even more interesting is that the durian shares a whole-genome duplication event with cotton. It's like they're distant relatives who once had a similar family reunion in their genetic history.
-
-Why does all of this matter? Well, the durian's genome is the first in the Helicteroideae subfamily to be fully sequenced. This achievement is a game-changer for researchers and could have a big impact on our understanding of tropical fruit biology and agronomy, like having the ultimate guide to growing and enjoying these unique fruits. It's a bit like discovering a treasure map for the world of durians.
-
-## Gene Function Annotation
-
-```{r echo = F, fig.cap = 'Types of -omics', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/omics.png')
-```
-
-Imagine you're in a massive library filled with countless books, each representing a gene. Your task is to decipher the meaning and importance of every single book, which is akin to figuring out what each gene does. It's like a puzzle where you need to connect the dots.
-
-**Functional genomics** is our way of tackling this monumental challenge. We're equipped with tools and methods to tackle the entire genome at once. Instead of reading one book at a time, we're trying to read the entire library in one go. This approach allows us to see how all the genes in an organism work together, kind of like watching all the characters in a complex story play their roles.
-
-
-### Challenges with Gene Function Annotation and Characterization
-
-```{r echo = F, fig.cap = 'Outline of Functional Annotation', fig.align = 'center'}
-knitr::include_graphics('../imgs/week9/function_annotation.png')
-```
-
-Firstly, many of the genes we find through sequencing are like undiscovered treasures. They're novel, unique, and not quite like anything we've seen before. In fact, in Arabidopsis, a model plant, over 40% of the genes are entirely novel. It's like finding new species in a jungle.
-
-Even when we look at genes from different organisms, they may seem similar on the surface, but figuring out their specific role in a particular organism can be as tricky as solving a riddle. Just because they look alike doesn't mean they act the same way.
-
-Imagine you have a big family with many cousins who look nearly identical. Some might have the same hobbies and interests, but others could be completely different. That's what it's like when we discover multi-gene families. They may share strong similarities in their genetic sequences and behave similarly, but each one has a unique role, just like cousins with their own talents and interests.
+3. **Anti-Inflammatory Drugs:**
+   - Neuroinflammation, mediated by activated microglia and astrocytes, is a prominent feature of AD and may contribute to disease progression.
+   - Anti-inflammatory drugs aim to dampen neuroinflammation and reduce the release of pro-inflammatory cytokines and reactive oxygen species, potentially slowing down neuronal damage.
+   - However, the timing and extent of inflammation in AD are complex, and targeting inflammation may require careful modulation to avoid disrupting beneficial immune responses.
 
