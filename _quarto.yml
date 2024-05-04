@@ -21,7 +21,6 @@ book:
         - chapters/week9.qmd
         - chapters/week10.qmd
         - chapters/week11.qmd
-        - chapters/week12.qmd
   sharing: [twitter, facebook]
   page-navigation: true
   repo-url: https://github.com/kevfo/BS4018_Notes/
